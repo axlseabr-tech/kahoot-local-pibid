@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kahoot Local PIBID | Quiz Interativo 100% Offline para Escolas</title>
+  <meta name="description" content="Plataforma de Quiz estilo Kahoot 100% offline para escolas públicas. Sem internet, latência zero, ilimitado e gratuito. Projeto PIBID Matemática UFRR.">
+  <meta name="author" content="Axl Oliveira Seabra">
+  <meta name="keywords" content="Kahoot, Quiz Offline, PIBID, UFRR, Matemática, Gamificação, Educação, Node.js, Socket.io">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Kahoot Local PIBID | A Emoção do Quiz Sem Precisar de Internet">
+  <meta property="og:description" content="Transforme o notebook do professor em um servidor local via Wi-Fi Hotspot. Alunos jogam pelo celular com latência zero e sem gastar dados.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/kahoot_hero.jpg">
+
+  <!-- Fontes Google: Outfit (Títulos) + Inter (Texto) + JetBrains Mono (Código) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Efeitos de Brilho de Fundo Gamificados -->
+  <div class="glow-orb glow-purple"></div>
+  <div class="glow-orb glow-cyan"></div>
+  <div class="glow-orb glow-crimson"></div>
+
+  <!-- Barra Superior de Destaque -->
+  <div class="top-announcement">
+    <div class="container top-flex">
+      <span class="pill pill-orange">Projeto de Extensão & Tecnologia Escolar</span>
+      <p>Desenvolvido para o <strong>PIBID Matemática • UFRR</strong> — 100% Livre para replicação em escolas públicas.</p>
+      <a href="#downloads" class="top-link">Baixar Projeto (.ZIP) &darr;</a>
+    </div>
+  </div>
+
+  <!-- Cabeçalho Principal -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-flex">
+      <a href="#inicio" class="brand">
+        <div class="brand-shapes">
+          <span class="shape s-red">▲</span>
+          <span class="shape s-blue">◆</span>
+          <span class="shape s-yellow">●</span>
+          <span class="shape s-green">■</span>
+        </div>
+        <div class="brand-title">
+          <span class="main-name">Kahoot Local</span>
+          <span class="sub-name">PIBID • UFRR</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="nav-links">
+        <ul>
+          <li><a href="#inicio" class="n-link active">Início</a></li>
+          <li><a href="#por-que" class="n-link">Por que Usar?</a></li>
+          <li><a href="#simulador" class="n-link">Simulador Demo</a></li>
+          <li><a href="#passo-a-passo" class="n-link">Como Jogar</a></li>
+          <li><a href="#downloads" class="n-link">Downloads</a></li>
+          <li><a href="#faq" class="n-link">Perguntas Frequentes</a></li>
+          <li><a href="https://axlseabr-tech.github.io/divulgacao-cientifica/Site/" target="_blank" class="n-link external-portal">Portal Científico &nearr;</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-cta">
+        <button class="theme-btn" id="theme-toggle" aria-label="Alternar Modo Claro/Escuro" title="Alternar Modo Claro/Escuro">
+          <svg class="sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+
+        <a href="#downloads" class="btn btn-purple btn-sm hide-sm">Baixar Manual</a>
+
+        <button class="hamburger-btn" id="mobile-menu-btn" aria-label="Abrir Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Seção Hero -->
+    <section class="hero-block" id="inicio">
+      <div class="container hero-layout">
+        <div class="hero-text-col">
+          <div class="hero-pills">
+            <span class="pill pill-purple">🎉 Gamificação Educacional</span>
+            <span class="pill pill-green">⚡ Latência Zero (&lt; 10ms)</span>
+            <span class="pill pill-blue">📶 100% Offline (Sem Internet)</span>
+          </div>
+
+          <h1 class="hero-heading">
+            A emoção do Kahoot na sala de aula, <span class="vivid-gradient">sem gastar 1 MB de internet!</span>
+          </h1>
+
+          <p class="hero-lead">
+            Projetado para vencer o maior desafio das escolas públicas: a falta de conexão. O notebook do professor gera uma rede Wi-Fi local própria e os alunos jogam simultaneamente pelos seus celulares lendo um <strong>QR Code na lousa</strong>. Sem contas pagas, sem anúncios e com jogadores ilimitados.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#simulador" class="btn btn-primary btn-glow">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              Testar Simulador ao Vivo
+            </a>
+            <a href="docs/kahoot-local-pibid.zip" class="btn btn-secondary" download>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              Baixar Projeto (.ZIP)
+            </a>
+            <a href="docs/Manual_Kahoot_Local_PIBID.pdf" class="btn btn-ghost" download>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              Manual em PDF
+            </a>
+          </div>
+
+          <!-- Métricas de Destaque -->
+          <div class="metrics-row">
+            <div class="metric-box">
+              <span class="m-val">0 MB</span>
+              <span class="m-lbl">Dados Móveis Gastos</span>
+            </div>
+            <div class="metric-box">
+              <span class="m-val">&lt; 10ms</span>
+              <span class="m-lbl">Tempo de Resposta Local</span>
+            </div>
+            <div class="metric-box">
+              <span class="m-val">100%</span>
+              <span class="m-lbl">Livre & Sem Anúncios</span>
+            </div>
+            <div class="metric-box">
+              <span class="m-val">1 Clique</span>
+              <span class="m-lbl">Para Iniciar no Windows</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-media-col">
+          <div class="media-frame">
+            <img src="assets/kahoot_hero.jpg" alt="Alunos jogando Kahoot Local em sala de aula" class="hero-cover">
+            <div class="media-overlay-badge">
+              <div class="pulse-indicator"></div>
+              <span>Servidor Local Ativo • Latência: 4ms</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção: Por que o Kahoot Local? -->
+    <section class="section-area" id="por-que">
+      <div class="container">
+        <div class="title-center">
+          <span class="kicker">A Realidade da Escola Pública</span>
+          <h2 class="title-lg">Por que Criamos uma Versão 100% Offline?</h2>
+          <p class="desc-text">
+            O Kahoot original é uma excelente ferramenta pedagógica, mas na prática cotidiana da maioria das escolas públicas do Brasil ele se torna inviável.
+          </p>
+        </div>
+
+        <div class="comparison-grid">
+          <!-- Coluna 1: Kahoot Comercial -->
+          <div class="comp-card card-commercial">
+            <div class="comp-badge bad">✕ Kahoot! Comercial (Nuvem)</div>
+            <h3>As Barreiras na Escola Pública</h3>
+            <ul class="comp-list list-bad">
+              <li><strong>Dependência Crítica de Internet:</strong> Qualquer oscilação na rede derruba a partida e desmotiva a turma inteira.</li>
+              <li><strong>Limitação Estrita de Jogadores:</strong> Planos gratuitos limitam severamente a quantidade de alunos conectados.</li>
+              <li><strong>Consumo de Dados dos Alunos:</strong> Nem todos os estudantes possuem pacotes de 4G para carregar imagens pesadas.</li>
+              <li><strong>Anúncios e Burocracia:</strong> Telas intermediárias de propaganda e exigência de cadastros/logins constantes.</li>
+            </ul>
+          </div>
+
+          <!-- Coluna 2: Kahoot Local PIBID -->
+          <div class="comp-card card-local">
+            <div class="comp-badge good">✓ Kahoot Local PIBID (Offline)</div>
+            <h3>A Liberdade da Rede Local</h3>
+            <ul class="comp-list list-good">
+              <li><strong>100% Desconectado da Internet:</strong> Funciona mesmo se a escola inteira estiver sem sinal de internet ou luz de rede externa.</li>
+              <li><strong>Jogadores Ilimitados & Sem Planos:</strong> Conecte 40, 50 ou mais alunos simultaneamente na rede local do notebook.</li>
+              <li><strong>Conexão Instantânea via QR Code:</strong> O aluno apenas aponta a câmera para a lousa e já está no jogo em 3 segundos.</li>
+              <li><strong>Sons Nativos Sintetizados:</strong> Áudio interativo criado em código puro (Web Audio API) sem baixar nenhum arquivo externo.</li>
+              <li><strong>Editor de Quizzes Integrado:</strong> Crie seus próprios questionários para qualquer matéria pelo próprio navegador.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção: Simulador Demo Interativo ao Vivo -->
+    <section class="section-area bg-gamified" id="simulador">
+      <div class="container">
+        <div class="title-center">
+          <span class="kicker">Experimente Agora Mesmo</span>
+          <h2 class="title-lg">Simulador Interativo do Jogo</h2>
+          <p class="desc-text">
+            Veja como os alunos vivenciam a resposta na tela do celular. Escolha a resposta correta antes que o cronômetro chegue a zero!
+          </p>
+        </div>
+
+        <div class="demo-game-container">
+          <!-- Topo do Jogo: Pergunta e Timer -->
+          <div class="demo-game-screen" id="demo-screen">
+            <div class="demo-header">
+              <div class="demo-question-number">Questão 1 de 1 • Matemática 9º Ano</div>
+              <div class="demo-timer" id="demo-timer">20</div>
+            </div>
+
+            <div class="demo-question-box">
+              <h3 id="demo-question-text">Qual é a área de um círculo cujo raio mede 3 metros? (Considere π = 3,14)</h3>
+              <div class="demo-formula">Fórmula: Área = π · r²</div>
+            </div>
+
+            <!-- Botões das 4 Respostas estilo Kahoot -->
+            <div class="demo-answers-grid" id="demo-options">
+              <button class="answer-btn ans-red" data-correct="false" data-letter="A">
+                <span class="btn-shape">▲</span>
+                <span class="btn-text">18,84 m²</span>
+              </button>
+
+              <button class="answer-btn ans-blue" data-correct="true" data-letter="B">
+                <span class="btn-shape">◆</span>
+                <span class="btn-text">28,26 m²</span>
+              </button>
+
+              <button class="answer-btn ans-yellow" data-correct="false" data-letter="C">
+                <span class="btn-shape">●</span>
+                <span class="btn-text">9,42 m²</span>
+              </button>
+
+              <button class="answer-btn ans-green" data-correct="false" data-letter="D">
+                <span class="btn-shape">■</span>
+                <span class="btn-text">31,40 m²</span>
+              </button>
+            </div>
+
+            <!-- Feedback de Resposta (Invisível no início) -->
+            <div class="demo-feedback-overlay" id="demo-feedback">
+              <div class="feedback-content" id="feedback-body">
+                <!-- Preenchido via JavaScript -->
+              </div>
+              <button class="btn btn-primary" id="btn-restart-demo">Jogar Novamente ⟳</button>
+            </div>
+          </div>
+
+          <div class="demo-instructions-note">
+            <p>💡 <em>No jogo real em sala de aula, as perguntas e alternativas são projetadas na lousa pelo notebook, e a tela do smartphone do aluno exibe os 4 botões coloridos de resposta rápida com pontuação por velocidade!</em></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção: Como Funciona o Ponto de Acesso (Arquitetura) -->
+    <section class="section-area" id="como-funciona">
+      <div class="container">
+        <div class="title-center">
+          <span class="kicker">Arquitetura Sem Fio</span>
+          <h2 class="title-lg">O Segredo da Conexão sem Gastar Internet</h2>
+          <p class="desc-text">
+            Entenda a engenharia simples e engenhosa que permite aos celulares conversarem com o computador do professor sem precisar de roteador externo.
+          </p>
+        </div>
+
+        <div class="hotspot-diagram-card">
+          <div class="diagram-grid">
+            <div class="diagram-node node-server">
+              <div class="node-icon">💻</div>
+              <h4>Notebook do Professor</h4>
+              <span class="badge-role">Servidor Local (Node.js)</span>
+              <p>Ativa o <strong>Ponto de Acesso Móvel do Windows</strong> (Hotspot Wi-Fi). Processa as respostas e projeta o placar na lousa.</p>
+            </div>
+
+            <div class="diagram-pulse-arrow">
+              <div class="wifi-wave-icon">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="arrow-text">Rede Wi-Fi Local<br><strong>Sem Dados / &lt; 10ms</strong></span>
+            </div>
+
+            <div class="diagram-node node-clients">
+              <div class="node-icon">📱📱📱</div>
+              <h4>Celulares dos Alunos</h4>
+              <span class="badge-role">Clientes Web</span>
+              <p>Conectam na rede do notebook e abrem o jogo no navegador escaneando o QR Code na lousa.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção: Passo a Passo do Professor -->
+    <section class="section-area bg-surface" id="passo-a-passo">
+      <div class="container">
+        <div class="title-center">
+          <span class="kicker">Facilidade de Uso</span>
+          <h2 class="title-lg">Como Jogar em Sala: Guia em 4 Passos</h2>
+          <p class="desc-text">
+            Criado pensando em professores que não têm tempo para configurações complexas. Tudo funciona com arquivos de 1 clique.
+          </p>
+        </div>
+
+        <div class="steps-flow-grid">
+          <div class="flow-card">
+            <div class="step-num">1</div>
+            <h4>Instalação Inicial (1 Vez)</h4>
+            <p>Baixe a pasta do jogo e dê dois cliques no arquivo:</p>
+            <code>instalar_dependencias.bat</code>
+            <p class="step-sub">Ele baixa as bibliotecas necessárias de forma 100% automática.</p>
+          </div>
+
+          <div class="flow-card">
+            <div class="step-num">2</div>
+            <h4>Ligue o Ponto de Acesso</h4>
+            <p>No Windows, pressione <strong>Win + I</strong> &rarr; <em>Rede e Internet</em> &rarr; <strong>Ponto de Acesso Móvel</strong> e clique em <em>Ativado</em>.</p>
+            <p class="step-sub">Dica: Crie uma rede chamada <code>Quiz-Matematica</code> com senha fácil (ex: <code>12345678</code>).</p>
+          </div>
+
+          <div class="flow-card">
+            <div class="step-num">3</div>
+            <h4>Inicie a Partida</h4>
+            <p>Dê dois cliques no arquivo:</p>
+            <code>iniciar_quiz.bat</code>
+            <p class="step-sub">O servidor liga e o navegador abre na hora na tela do Host com o <strong>QR Code gigante</strong> para projetar!</p>
+          </div>
+
+          <div class="flow-card">
+            <div class="step-num">4</div>
+            <h4>Alunos no Jogo & Pódio</h4>
+            <p>Os estudantes apontam o celular para o QR Code, digitam seus nomes e a partida começa com ranking ao vivo e confetes!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção: Downloads e Documentos -->
+    <section class="section-area" id="downloads">
+      <div class="container">
+        <div class="title-center">
+          <span class="kicker">Recurso Educacional Aberto</span>
+          <h2 class="title-lg">Downloads & Documentação Oficial</h2>
+          <p class="desc-text">
+            Baixe o código-fonte completo pronto para rodar e o manual pedagógico formatado para impressão.
+          </p>
+        </div>
+
+        <div class="downloads-deck">
+          <!-- Card 1: ZIP -->
+          <div class="down-card highlight-down">
+            <div class="down-icon-box">📦</div>
+            <div class="down-body">
+              <span class="pill pill-green">Pacote Pronto para Windows</span>
+              <h3>kahoot-local-pibid.zip</h3>
+              <p>Contém o servidor Node.js, scripts executáveis (.bat), quizzes de demonstração de Matemática e o editor integrado.</p>
+              <div class="down-meta">
+                <span>📁 Formato: .ZIP</span>
+                <span>⚖️ Tamanho: ~175 KB</span>
+                <span>⚙️ Requisitos: Windows 10/11</span>
+              </div>
+            </div>
+            <div class="down-action">
+              <a href="docs/kahoot-local-pibid.zip" class="btn btn-primary btn-lg" download="kahoot-local-pibid.zip">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                Baixar Projeto (.ZIP)
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2: Manual PDF -->
+          <div class="down-card">
+            <div class="down-icon-box">📄</div>
+            <div class="down-body">
+              <span class="pill pill-blue">Manual Oficial em PDF</span>
+              <h3>Manual_Kahoot_Local_PIBID.pdf</h3>
+              <p>Guia impresso passo a passo com ilustrações para distribuição entre professores e bolsistas do PIBID.</p>
+              <div class="down-meta">
+                <span>📁 Formato: PDF</span>
+                <span>⚖️ Tamanho: ~172 KB</span>
+                <span>🖨️ Pronto para Impressão A4</span>
+              </div>
+            </div>
+            <div class="down-action">
+              <a href="docs/Manual_Kahoot_Local_PIBID.pdf" class="btn btn-secondary btn-lg" download="Manual_Kahoot_Local_PIBID.pdf">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                Baixar Manual (PDF)
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Instruções de Clone via Git -->
+        <div class="git-box">
+          <div class="git-header">
+            <h4>Você também pode clonar o projeto via terminal:</h4>
+            <button class="btn-copy-code" id="btn-copy-git">Copiar Comando</button>
+          </div>
+          <pre><code id="git-clone-code">git clone https://github.com/axlseabr-tech/kahoot-local-pibid.git</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção: Perguntas Frequentes (FAQ) -->
+    <section class="section-area bg-surface" id="faq">
+      <div class="container">
+        <div class="title-center">
+          <span class="kicker">Tire Suas Dúvidas</span>
+          <h2 class="title-lg">Perguntas Frequentes dos Professores</h2>
+        </div>
+
+        <div class="faq-accordion">
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Os alunos gastam seus créditos de dados móveis (4G/5G)?</span>
+              <span class="faq-chevron">+</span>
+            </button>
+            <div class="faq-answer">
+              <p><strong>Não, absolutamente zero!</strong> Os alunos se conectam ao Wi-Fi local gerado pelo próprio computador do professor. Toda a comunicação ocorre dentro da sala de aula, sem consumir nenhum dado de operadora de celular.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Quantos alunos conseguem jogar ao mesmo tempo?</span>
+              <span class="faq-chevron">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>O sistema foi construído em Node.js com WebSockets ultraleves. Uma placa de rede sem fio padrão de notebook atende com folga entre <strong>40 e 50 celulares simultâneos</strong> com latência inferior a 10 milissegundos.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Posso usar para outras disciplinas além de Matemática?</span>
+              <span class="faq-chevron">+</span>
+            </button>
+            <div class="faq-answer">
+              <p><strong>Sim!</strong> O jogo possui um <strong>Editor Visual de Quizzes</strong> embutido. Você pode criar questionários de Física, História, Geografia, Biologia, Língua Portuguesa ou qualquer outro tema com alternativas personalizadas e tempos ajustáveis de 10 a 60 segundos.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>E se a escola não tiver projetor ou datashow?</span>
+              <span class="faq-chevron">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Você pode colocar o notebook em cima de uma mesa no centro da sala ou virado para a turma. O ideal é usar projetor ou TV HDMI, mas o jogo roda perfeitamente apenas com a tela do computador.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="footer-block">
+    <div class="container footer-grid">
+      <div class="footer-col-main">
+        <div class="footer-logo">
+          <span class="shape s-red">▲</span>
+          <span class="shape s-blue">◆</span>
+          <span>Kahoot Local PIBID</span>
+        </div>
+        <p>Projeto desenvolvido no âmbito do <strong>Programa Institucional de Bolsas de Iniciação à Docência (PIBID)</strong> • Universidade Federal de Roraima (UFRR).</p>
+        <p class="license-tag">Desenvolvido por <strong>Axl Oliveira Seabra</strong>. Distribuído sob Licença Aberta para professores de todo o Brasil.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#simulador">Simulador Demo</a></li>
+          <li><a href="#passo-a-passo">Como Jogar</a></li>
+          <li><a href="#downloads">Baixar Arquivos</a></li>
+          <li><a href="#faq">Perguntas Frequentes</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Ecossistema</h4>
+        <ul>
+          <li><a href="https://axlseabr-tech.github.io/divulgacao-cientifica/Site/" target="_blank">Portal de Divulgação Científica &nearr;</a></li>
+          <li><a href="https://ufrr.br" target="_blank">Portal UFRR &nearr;</a></li>
+          <li><a href="https://github.com/axlseabr-tech" target="_blank">GitHub de Axl Seabra &nearr;</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom-bar">
+      <div class="container footer-bottom-flex">
+        <p>&copy; 2026 Axl Oliveira Seabra • PIBID Matemática UFRR.</p>
+        <a href="#inicio" class="back-top">Voltar ao topo &uarr;</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notificação -->
+  <div class="toast" id="toast">Comando copiado com sucesso!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
