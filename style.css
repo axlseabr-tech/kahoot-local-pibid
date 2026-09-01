@@ -157,6 +157,8 @@ img { max-width: 100%; height: auto; display: block; }
   display: flex;
   align-items: center;
   gap: 14px;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .brand-shapes {
@@ -173,6 +175,8 @@ img { max-width: 100%; height: auto; display: block; }
 .brand-title {
   display: flex;
   flex-direction: column;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .main-name {
@@ -1098,6 +1102,467 @@ img { max-width: 100%; height: auto; display: block; }
 .toast.show {
   transform: translateY(0);
   opacity: 1;
+}
+
+/* ==========================================================================
+   SEÇÃO: COMUNICAÇÃO, CONTATO & FEEDBACK DOS PROFESSORES
+   ========================================================================== */
+.community-layout-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 36px;
+  align-items: start;
+}
+
+.contact-channels-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: var(--shadow-card);
+}
+
+.contact-channels-box h3 {
+  font-family: var(--font-head);
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.contact-desc {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.contact-cards-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-pill-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px 20px;
+  transition: all 0.2s ease;
+  color: inherit;
+}
+
+.contact-pill-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--k-yellow);
+  box-shadow: 0 4px 16px rgba(255, 166, 2, 0.2);
+}
+
+.contact-icon-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.icon-email {
+  background: rgba(19, 104, 206, 0.2);
+  color: var(--k-blue);
+}
+
+.icon-whatsapp {
+  background: rgba(38, 137, 12, 0.2);
+  color: #25d366;
+}
+
+.contact-details-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  margin-bottom: 2px;
+}
+
+.contact-val {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-main);
+  font-family: var(--font-code);
+}
+
+.contact-subtext {
+  font-size: 0.8rem;
+  color: var(--text-sub);
+}
+
+/* Painel de Comentários */
+.comments-panel-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: var(--shadow-card);
+}
+
+.comments-panel-box h3 {
+  font-family: var(--font-head);
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.comment-form-container {
+  margin: 20px 0 28px 0;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.comment-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.input-field, .select-field, .textarea-field {
+  width: 100%;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 14px;
+  color: var(--text-main);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  transition: border-color 0.2s;
+}
+
+.input-field:focus, .select-field:focus, .textarea-field:focus {
+  outline: none;
+  border-color: var(--k-yellow);
+}
+
+.textarea-field {
+  resize: vertical;
+  min-height: 80px;
+  margin-bottom: 12px;
+}
+
+/* ── FEED DE COMENTÁRIOS DO KAHOOT (CAIXAS SEPARADAS) ── */
+.comments-feed {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-height: 550px;
+  overflow-y: auto;
+  padding: 4px 6px 12px 2px;
+}
+
+/* Caixa / Card principal do comentário */
+.comment-card-item {
+  background: var(--bg-elevated);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 22px;
+  transition: all 0.2s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.comment-card-item:hover {
+  transform: translateY(-2px);
+  border-color: var(--k-purple-light);
+  box-shadow: 0 12px 32px rgba(106, 37, 217, 0.25);
+}
+
+/* Badge "Lido pelo Autor" */
+.badge-lido {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: rgba(38, 137, 12, 0.18);
+  color: #4ade80;
+  border: 1px solid rgba(74, 222, 128, 0.4);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Cabeçalho do comentário */
+.comment-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.commenter-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.commenter-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--k-purple-light), var(--k-blue));
+  color: #fff;
+  font-weight: 900;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 2px 10px rgba(106, 37, 217, 0.35);
+}
+
+.commenter-name {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text-main);
+  line-height: 1.2;
+}
+
+.commenter-role {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.comment-stars {
+  color: var(--k-yellow);
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+/* Texto do comentário */
+.comment-body-text {
+  font-size: 0.92rem;
+  color: var(--text-main);
+  line-height: 1.6;
+  margin: 0;
+  opacity: 0.92;
+}
+
+/* ── BARRA DE AÇÕES (Reações + Responder + Marcar Lido) ── */
+.comment-actions-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  margin-top: 4px;
+}
+
+.reaction-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 9999px;
+  padding: 4px 11px;
+  font-size: 0.84rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  color: var(--text-main);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap;
+}
+
+.reaction-btn:hover {
+  background: rgba(106, 37, 217, 0.18);
+  border-color: var(--k-purple-light);
+  transform: translateY(-1px);
+}
+
+.reaction-btn.active {
+  background: rgba(106, 37, 217, 0.28);
+  border-color: var(--k-purple-light);
+  color: #c4b5fd;
+  font-weight: 700;
+}
+
+.reaction-count {
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.reply-toggle-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  cursor: pointer;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #c4b5fd;
+  padding: 4px 13px;
+  border-radius: 9999px;
+  transition: all 0.15s ease;
+  margin-left: auto;
+}
+
+.reply-toggle-btn:hover {
+  background: rgba(106, 37, 217, 0.2);
+  border-color: var(--k-purple-light);
+  transform: translateY(-1px);
+}
+
+.mark-read-btn {
+  background: rgba(38, 137, 12, 0.1);
+  border: 1px solid rgba(74, 222, 128, 0.35);
+  cursor: pointer;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #4ade80;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  transition: all 0.15s ease;
+}
+
+.mark-read-btn:hover {
+  background: rgba(38, 137, 12, 0.22);
+  border-color: #4ade80;
+  transform: translateY(-1px);
+}
+
+/* ── ÁREA DE RESPOSTAS ANINHADAS (SUB-CAIXAS) ── */
+.replies-section {
+  margin-top: 8px;
+  padding-left: 14px;
+  border-left: 2px solid rgba(106, 37, 217, 0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.reply-card {
+  background: rgba(13, 7, 24, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.reply-card .commenter-avatar {
+  width: 32px;
+  height: 32px;
+  font-size: 0.75rem;
+}
+
+.reply-card .commenter-name {
+  font-size: 0.9rem;
+}
+
+.reply-card .commenter-role {
+  font-size: 0.75rem;
+}
+
+.reply-card .comment-body-text {
+  font-size: 0.88rem;
+}
+
+.reply-card .comment-actions-bar {
+  padding-top: 8px;
+}
+
+/* Formulário inline de resposta */
+.reply-form-inline {
+  margin-top: 10px;
+  background: rgba(21, 13, 39, 0.95);
+  border: 1px solid rgba(106, 37, 217, 0.4);
+  border-radius: 12px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  animation: fadeInDown 0.2s ease;
+}
+
+.reply-form-inline input,
+.reply-form-inline textarea {
+  background: var(--bg-surface);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 0.88rem;
+  color: var(--text-main);
+  font-family: inherit;
+  resize: none;
+  transition: border-color 0.15s;
+}
+
+.reply-form-inline input:focus,
+.reply-form-inline textarea:focus {
+  outline: none;
+  border-color: var(--k-purple-light);
+}
+
+.reply-form-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.reply-submit-btn {
+  background: linear-gradient(135deg, var(--k-purple-light), var(--k-purple));
+  border: none;
+  border-radius: 9999px;
+  padding: 7px 18px;
+  color: #fff;
+  font-size: 0.84rem;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: opacity 0.15s, transform 0.1s;
+}
+
+.reply-submit-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.reply-cancel-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  cursor: pointer;
+  padding: 6px 12px;
+}
+
+.reply-cancel-btn:hover {
+  color: var(--text-main);
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 /* ==========================================================================
