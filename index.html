@@ -3,82 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Axl Oliveira Seabra | Divulgação Científica & Engenharia de Prompt</title>
-  <meta name="description" content="Portal de divulgação científica e repositório acadêmico de Axl Oliveira Seabra (UFRR/TIDIEM/PIBIT). Tutoriais e modelos de Engenharia de Prompt na Educação Matemática.">
+  <title>Kahoot Local PIBID | Quiz Interativo 100% Offline para Escolas</title>
+  <meta name="description" content="Plataforma de Quiz estilo Kahoot 100% offline para escolas públicas. Sem internet, latência zero, ilimitado e gratuito. Projeto PIBID Matemática UFRR.">
   <meta name="author" content="Axl Oliveira Seabra">
-  <meta name="keywords" content="Engenharia de Prompt, Educação Matemática, UFRR, TIDIEM, PIBIT, Inteligência Artificial na Educação, BNCC, Grandezas e Medidas">
-  
-  <!-- Open Graph / Redes Sociais -->
-  <meta property="og:title" content="Axl Oliveira Seabra | Divulgação Científica & Engenharia de Prompt">
-  <meta property="og:description" content="Engenharia de Prompts na Educação Matemática: Modelos auditados, eliminação de alucinações e transposição didática.">
+  <meta name="keywords" content="Kahoot, Quiz Offline, PIBID, UFRR, Matemática, Gamificação, Educação, Node.js, Socket.io">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Kahoot Local PIBID | A Emoção do Quiz Sem Precisar de Internet">
+  <meta property="og:description" content="Transforme o notebook do professor em um servidor local via Wi-Fi Hotspot. Alunos jogam pelo celular com latência zero e sem gastar dados.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/hero_banner.jpg">
-  
-  <!-- Google Fonts: Outfit (Títulos modernos) + Inter (Leitura limpa) + JetBrains Mono (Código e Prompts) -->
+  <meta property="og:image" content="assets/kahoot_hero.jpg">
+
+  <!-- Fontes Google: Outfit (Títulos) + Inter (Texto) + JetBrains Mono (Código) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="style.css?v=2.1">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Efeito de iluminação de fundo (Glow Orbs) -->
-  <div class="bg-glow bg-glow-1"></div>
-  <div class="bg-glow bg-glow-2"></div>
+  <!-- Efeitos de Brilho de Fundo Gamificados -->
+  <div class="glow-orb glow-purple"></div>
+  <div class="glow-orb glow-cyan"></div>
+  <div class="glow-orb glow-crimson"></div>
 
-  <!-- Barra de Notificação Superior (Header Banner) -->
-  <div class="top-banner">
-    <div class="container top-banner-content">
-      <span class="badge badge-success">Novidade Acadêmica 2026</span>
-      <p>Produto Tecnológico e Didático UFRR/TIDIEM publicado: <strong>Engenharia de Prompt para Avaliação Educacional</strong>.</p>
-      <a href="#documentos" class="banner-link">Acessar PDF Oficial &rarr;</a>
+  <!-- Barra Superior de Destaque -->
+  <div class="top-announcement">
+    <div class="container top-flex">
+      <span class="pill pill-orange">PIBID Matemática • UFRR</span>
+      <p>Projeto de Extensão por <strong>Axl Oliveira Seabra</strong></p>
+      <a href="https://axlseabr-tech.github.io/divulgacao-cientifica/Site/" target="_blank" class="top-link" style="color: #00d2ff; text-decoration: underline;">🔬 Acessar Portal de Divulgação Científica Principal &nearr;</a>
     </div>
   </div>
 
-  <!-- Navegação Principal -->
-  <header class="main-header" id="header">
-    <div class="container nav-container">
-      <a href="#inicio" class="brand-logo" aria-label="Página Inicial" style="display: flex; align-items: center; gap: 12px; flex-shrink: 0; min-width: max-content; text-decoration: none;">
-        <img src="assets/emblem.jpg" alt="Emblema Científico" class="brand-emblem" style="width: 44px; height: 44px; border-radius: 8px; object-fit: cover; flex-shrink: 0;">
-        <div class="brand-text" style="display: flex; flex-direction: column; justify-content: center; flex-shrink: 0; min-width: max-content;">
-          <span class="brand-name" style="white-space: nowrap !important; font-family: var(--font-heading); font-weight: 800; font-size: 1.15rem; color: var(--text-main); line-height: 1.2; letter-spacing: -0.02em;">Axl Oliveira Seabra</span>
-          <span class="brand-role" style="white-space: nowrap !important; font-size: 0.76rem; color: var(--text-muted); font-weight: 500; line-height: 1.2;">Divulgação Científica • UFRR</span>
+  <!-- Cabeçalho Principal -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-flex">
+      <a href="#inicio" class="brand">
+        <div class="brand-shapes">
+          <span class="shape s-red">▲</span>
+          <span class="shape s-blue">◆</span>
+          <span class="shape s-yellow">●</span>
+          <span class="shape s-green">■</span>
+        </div>
+        <div class="brand-title">
+          <span class="main-name">Kahoot Local</span>
+          <span class="sub-name">PIBID • UFRR</span>
         </div>
       </a>
 
-      <!-- Menu Desktop -->
-      <nav class="nav-menu" id="nav-menu">
-        <ul class="nav-list">
-          <li><a href="#inicio" class="nav-link active">Início</a></li>
-          <li><a href="#sobre" class="nav-link">A Pesquisa</a></li>
-          <li><a href="#prompts" class="nav-link">Prompts</a></li>
-          <li><a href="#metodologia" class="nav-link">Metodologia</a></li>
-          <li><a href="#audio" class="nav-link">Áudios</a></li>
-          <li><a href="#documentos" class="nav-link">Documentos</a></li>
-          <li><a href="#repositorio" class="nav-link">Repositório</a></li>
-          <li><a href="#projetos-interativos" class="nav-link" style="color: #ffa602; font-weight: 600;">Outros Projetos &nearr;</a></li>
-          <li><a href="#comunidade" class="nav-link">Contato</a></li>
+      <nav class="nav-links" id="nav-links">
+        <ul>
+          <li><a href="#inicio" class="n-link active">Início</a></li>
+          <li><a href="#por-que" class="n-link">Por que Usar?</a></li>
+          <li><a href="#simulador" class="n-link">Simulador Demo</a></li>
+          <li><a href="#passo-a-passo" class="n-link">Como Jogar</a></li>
+          <li><a href="#downloads" class="n-link">Downloads</a></li>
+          <li><a href="#faq" class="n-link">Perguntas Frequentes</a></li>
+          <li><a href="#comunidade" class="n-link">Contato & Feedback</a></li>
+          <li><a href="https://axlseabr-tech.github.io/divulgacao-cientifica/Site/" target="_blank" class="n-link external-portal" style="color: #00d2ff !important; font-weight: 700;">← Portal Científico &nearr;</a></li>
         </ul>
       </nav>
 
-      <!-- Ações do Cabeçalho -->
-      <div class="nav-actions">
-        <!-- Alternador Tema Claro/Escuro -->
-        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Alternar tema de cores" title="Alternar Modo Claro/Escuro">
-          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-        </button>
-
-        <a href="#documentos" class="btn btn-primary btn-sm hide-mobile">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-          Baixar PDF
+      <div class="nav-cta">
+        <a href="https://axlseabr-tech.github.io/divulgacao-cientifica/Site/" target="_blank" class="btn btn-secondary btn-sm hide-sm" style="border-color: rgba(0, 210, 255, 0.4); color: #00d2ff;">
+          ← Portal Científico
         </a>
 
-        <!-- Botão Hambúrguer Mobile -->
-        <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir menu mobile">
-          <span></span>
-          <span></span>
-          <span></span>
+        <button class="theme-btn" id="theme-toggle" aria-label="Alternar Modo Claro/Escuro" title="Alternar Modo Claro/Escuro">
+          <svg class="sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+
+        <a href="#downloads" class="btn btn-purple btn-sm hide-sm">Baixar Manual</a>
+
+        <button class="hamburger-btn" id="mobile-menu-btn" aria-label="Abrir Menu">
+          <span></span><span></span><span></span>
         </button>
       </div>
     </div>
@@ -86,882 +86,408 @@
 
   <main>
     <!-- Seção Hero -->
-    <section class="hero-section" id="inicio">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <div class="hero-badges">
-            <span class="badge badge-outline">UFRR • Centro de Ciências e Tecnologia</span>
-            <span class="badge badge-outline">Grupo TIDIEM • PIBIT</span>
+    <section class="hero-block" id="inicio">
+      <div class="container hero-layout">
+        <div class="hero-text-col">
+          <div class="hero-pills">
+            <a href="https://axlseabr-tech.github.io/divulgacao-cientifica/Site/" target="_blank" class="pill pill-purple" style="text-decoration: none;" title="Acessar o Portal Científico de Axl Seabra">
+              🔬 Por Axl Seabra • Ver Publicações Científicas &nearr;
+            </a>
+            <span class="pill pill-green">⚡ Latência Zero (&lt; 10ms)</span>
+            <span class="pill pill-blue">📶 100% Offline</span>
           </div>
 
-          <h1 class="hero-title">
-            Engenharia de Prompts na <span class="gradient-text">Educação Matemática</span>
+          <h1 class="hero-heading">
+            A emoção do Kahoot na sala de aula, <span class="vivid-gradient">sem gastar 1 MB de internet!</span>
           </h1>
 
-          <p class="hero-subtitle">
-            Portal oficial de divulgação científica e recursos educacionais abertos. Descubra como transformar modelos de Inteligência Artificial em <strong>parceiros cognitivos de alta precisão</strong>, eliminando alucinações em cálculos e gerando avaliações formativas alinhadas à BNCC.
+          <p class="hero-lead">
+            Projetado para vencer o maior desafio das escolas públicas: a falta de conexão. O notebook do professor gera uma rede Wi-Fi local própria e os alunos jogam simultaneamente pelos seus celulares lendo um <strong>QR Code na lousa</strong>. Sem contas pagas, sem anúncios e com jogadores ilimitados.
           </p>
 
-          <div class="hero-cta-group">
-            <a href="#prompts" class="btn btn-primary btn-lg">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
-              Copiar Prompts Prontos
+          <div class="hero-actions">
+            <a href="#simulador" class="btn btn-primary btn-glow">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              Testar Simulador ao Vivo
             </a>
-            <a href="#documentos" class="btn btn-secondary btn-lg">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-              Baixar Artigo (PDF)
-            </a>
-            <a href="#audio" class="btn btn-ghost btn-lg">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-              Ouvir Narração
-            </a>
-          </div>
-
-          <!-- Métricas Científicas de Impacto -->
-          <div class="hero-stats">
-            <div class="stat-card">
-              <span class="stat-number">90<small>/100</small></span>
-              <span class="stat-label">Índice em Auditoria de IA</span>
-            </div>
-            <div class="stat-card">
-              <span class="stat-number">0%</span>
-              <span class="stat-label">LaTeX cru (Unicode 100%)</span>
-            </div>
-            <div class="stat-card">
-              <span class="stat-number">3 a 5</span>
-              <span class="stat-label">Etapas Ativas de Resolução</span>
-            </div>
-            <div class="stat-card">
-              <span class="stat-number">BNCC</span>
-              <span class="stat-label">EF09MA18 & EF09MA19</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero-visual">
-          <div class="visual-card">
-            <img src="assets/hero_banner.jpg" alt="Engenharia de Prompt e Geometria Matemática" class="hero-image">
-            <div class="visual-caption">
-              <div class="caption-icon">📐</div>
-              <div class="caption-text">
-                <strong>Modelo Experimental Mestre V1.28</strong>
-                <span>Grandezas e Medidas • Cadeia de Pensamento & Raciocínio Inverso</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Seção: O Paradigma Científico (Sobre) -->
-    <section class="section-container" id="sobre">
-      <div class="container">
-        <div class="section-header text-center">
-          <span class="section-kicker">Epistemologia & Inovação</span>
-          <h2 class="section-title">Da Interação Ingênua à Parceria Cognitiva</h2>
-          <p class="section-desc">
-            Modelos de linguagem como Gemini, ChatGPT e Claude não são oráculos computacionais e frequentemente cometem <strong>alucinações aritméticas graves</strong> quando solicitados sem método. Nossa pesquisa formula um arcabouço rigoroso para superar essa barreira.
-          </p>
-        </div>
-
-        <div class="paradigm-grid">
-          <div class="card card-warning">
-            <div class="card-icon-badge warning-bg">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="10" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
-            </div>
-            <h3>O Problema do Prompt Ingênuo</h3>
-            <p class="card-subtitle">"Gere 5 questões sobre volume para o 9º ano..."</p>
-            <ul class="check-list-danger">
-              <li><strong>Alucinações aritméticas:</strong> Erros grosseiros em multiplicação de decimais e cálculo com π.</li>
-              <li><strong>LaTeX cru poluído:</strong> Códigos ininteligíveis que quebram a formatação no Word e Google Docs.</li>
-              <li><strong>Baixa densidade cognitiva:</strong> Questões triviais de 1 etapa que não exigem raciocínio crítico.</li>
-              <li><strong>Repetição monótona:</strong> Quase 80% das questões usam sempre o mesmo contexto ("caixa-d'água").</li>
-            </ul>
-          </div>
-
-          <div class="card card-success highlight-card">
-            <div class="card-icon-badge success-bg">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-            </div>
-            <h3>A Solução: Engenharia de Prompt Estruturada</h3>
-            <p class="card-subtitle">Produto Didático e Metodológico UFRR (V1.28)</p>
-            <ul class="check-list-success">
-              <li><strong>Auditoria CoT Interna:</strong> Dupla verificação das contas antes de emitir qualquer linha do enunciado.</li>
-              <li><strong>Unicode Direto (Zero LaTeX):</strong> Prontinho para copiar e imprimir direto na prova do professor.</li>
-              <li><strong>Régua de Etapas Ativas:</strong> 3 a 5 operações matemáticas reais (conversão, dedução, substituição).</li>
-              <li><strong>Raciocínio Inverso:</strong> Estímulo à aprendizagem profunda (Teoria da Variação de Marton).</li>
-              <li><strong>Contexto Amazônico:</strong> Situações ancoradas no cotidiano real, bacias e sustentabilidade.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Seção: Catálogo Interativo dos Prompts Prontos (#prompts) -->
-    <section class="section-container bg-surface" id="prompts">
-      <div class="container">
-        <div class="section-header text-center">
-          <span class="section-kicker">Instrumento Didático para Professores e Pesquisadores</span>
-          <h2 class="section-title">Catálogo de Prompts Prontos para Uso</h2>
-          <p class="section-desc">
-            Selecione o modelo desejado, copie com um clique e utilize no <strong>Google Gemini</strong>, <strong>ChatGPT</strong> ou <strong>Claude</strong> para obter avaliações formativas perfeitas.
-          </p>
-        </div>
-
-        <!-- Abas de Seleção de Prompts -->
-        <div class="tabs-control" role="tablist">
-          <button class="tab-btn active" data-tab="tab-prompt1" role="tab" aria-selected="true">
-            <span class="tab-badge">Canônico</span>
-            Prompt 1: Grandezas & Medidas (9º Ano)
-          </button>
-          <button class="tab-btn" data-tab="tab-prompt2" role="tab" aria-selected="false">
-            <span class="tab-badge">Parametrizado</span>
-            Prompt 2: Matemática Geral (Qualquer Ano)
-          </button>
-          <button class="tab-btn" data-tab="tab-prompt3" role="tab" aria-selected="false">
-            <span class="tab-badge">Universal</span>
-            Prompt 3: Multidisciplinar (Todas as Matérias)
-          </button>
-        </div>
-
-        <!-- Conteúdo da Aba 1: Prompt Canônico -->
-        <div class="tab-pane active" id="tab-prompt1">
-          <div class="prompt-card">
-            <div class="prompt-header">
-              <div>
-                <div class="prompt-meta-tags">
-                  <span class="badge badge-accent">🏆 Validado Empiricamente</span>
-                  <span class="badge badge-outline">Nota 90/100 na Auditoria</span>
-                  <span class="badge badge-outline">BNCC: EF09MA18 & EF09MA19</span>
-                </div>
-                <h3 class="prompt-title">Prompt 1 (Canônico): Grandezas e Medidas — 9º Ano do Ensino Fundamental</h3>
-                <p class="prompt-description">
-                  O núcleo experimental da pesquisa PIBIT/UFRR. Gera 10 questões (5 por habilidade) cobrindo notação científica, escalas astronômicas/microscópicas e volumes de prismas/cilindros com progressão oblíqua de dificuldade.
-                </p>
-              </div>
-              <div class="prompt-actions">
-                <button class="btn btn-primary copy-prompt-btn" data-target="code-prompt1">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-                  Copiar Prompt
-                </button>
-              </div>
-            </div>
-
-            <div class="code-container">
-              <pre><code id="code-prompt1">Aja como um professor de Matemática experiente, especialista em Design Instrucional e Avaliação Formativa, com domínio da BNCC do Ensino Médio e Fundamental, comprometido com a ética educacional.
-
-Sua tarefa é gerar uma avaliação desafiadora com 10 questões matemáticas, baseadas nas 2 habilidades da BNCC listadas abaixo.
-* Distribuição: 5 questões para cada habilidade.
-* Estrutura por habilidade (Progressão Pedagógica Oblíqua):
-    * Questão 1: Fácil/Média (Discursiva Conceitual Básica)
-    * Questão 2: Média (Discursiva Conceitual de Análise de Erros ou Propriedades)
-    * Questão 3: Média/Difícil (Discursiva Contextualizada no cotidiano brasileiro - deve possuir complexidade real de análise)
-    * Questão 4: Difícil (Prática Aplicada com 3 a 4 etapas lógicas ativas)
-    * Questão 5: Muito Difícil (Prática Aplicada com raciocínio inverso e 4 a 5 etapas lógicas ativas)
-
-As questões devem ser geradas exclusivamente com base nestas habilidades:
-
---- Início das Habilidades ---
-Habilidade 1: (EF09MA18) Reconhecer e empregar unidades usadas para expressar medidas muito grandes ou muito pequenas, tais como distância entre planetas e sistemas solares, tamanho de vírus ou de células, capacidade de armazenamento de computadores, entre outros.
-
-Habilidade 2: (EF09MA19) Resolver e elaborar problemas que envolvam medidas de volumes de prismas e de cilindros retos, inclusive com uso de expressões de cálculo, em situações cotidianas.
---- Fim das Habilidades ---
-
-Para garantir precisão, dificuldade elevada e formatação correta, siga estritamente estas regras:
-
-1. Mecanismo Anti-Alucinação (Verificação de Cálculos - Crítico):
-   * Antes de escrever o enunciado e a solução de qualquer questão prática, você deve realizar a resolução matemática internamente passo a passo.
-   * Verifique se os dados fornecidos são logicamente consistentes (ex: se um cilindro tem determinado raio e altura, se o volume final calculado corresponde de fato a V = π r² h).
-   * Realize todos os cálculos aritméticos duas vezes para garantir que não haja erros de cálculo básico ou arredondamento.
-
-2. Saída Final - SEM LATEX:
-   * NUNCA exiba código LaTeX (símbolos como $ ou \) na resposta final visível ou nas fórmulas da saída.
-   * Conversão Obrigatória: Converta toda a matemática para texto puro usando caracteres Unicode (ex: use x², ³/₄, π, ±, √, ≠, · em vez de códigos de marcação).
-
-3. Separadores e Arredondamento:
-   * Use PONTO (.) para separador de milhar e VÍRGULA (,) para separador decimal (Ex: 1.250,50).
-   * Resultados decimais devem ser arredondados para duas casas (Ex: 33,33), exceto se o contexto da questão exigir um número inteiro.
-
-4. Complexidade por Etapas (Substituindo estimativas subjetivas de tempo):
-   * Evite aplicação direta de fórmulas em apenas um passo. As questões práticas (Questões 4 e 5) devem exigir do estudante o cumprimento de 3 a 5 etapas matemáticas sequenciais e distintas.
-   * Atenção (Critério de Etapa Ativa): Passos passivos como "ler o enunciado", "identificar os dados do problema", "declarar fórmulas" ou "escrever as variáveis" NÃO contam como etapas de resolução. Apenas operações matemáticas ativas (cálculos aritméticos, conversões de unidade reais, simplificações e manipulações algébricas) são consideradas etapas legítimas. Cada etapa no Raciocínio deve descrever uma operação matemática ativa.
-
-5. Raciocínio Inverso:
-   * Nas Questões 5 (Muito Difícil), aplique obrigatoriamente o raciocínio inverso: forneça o resultado final e exija que o aluno deduza uma variável de dimensão ou parâmetro inicial.
-   * Calibragem para a Habilidade 1: O raciocínio inverso para a Habilidade 1 não deve ser uma divisão simples de total por parte. Deve envolver uma proporção ou equação em notação científica na qual o aluno precise isolar uma variável sob uma dada condição.
-
-6. Diversificação Contextual Estrita:
-   * Cada uma das questões de uma mesma habilidade deve adotar um tema ou domínio de contexto totalmente diferente. É proibido repetir nichos de contexto ou cenários parecidos na mesma habilidade (ex: na Habilidade 1, se usar microbiologia/vírus em uma questão, não use microbiologia/bactérias ou células nas outras; na Habilidade 2, se usar armazenamento de água em uma caixa-d'água, não use reservatório ou piscina nas outras). Explore temas variados: Astronomia, Biologia, Economia, Silos, Embalagens industriais, Medicina.
-
-7. Regra de Notação Científica (Ajuste para EF09MA18):
-   * Para a Habilidade 1: Apresente a resposta em formato legível como "a x 10^n" (ex: 1,5 x 10⁸). NUNCA use o formato de código de programação "e" (ex: 1.5e8).
-   * Para a Habilidade 2: Evite notação científica, prefira números completos (ex: 150.000 litros).
-
----
-
-Para cada habilidade, gere a saída seguindo exatamente este modelo visual:
-
---- Habilidade ---
-
-Questão 1 (Discursiva Conceitual - Fácil/Média)
-[Enunciado claro explorando o conceito matemático com profundidade.]
-* Resposta Correta: [Texto explicativo e resultado final formatado]
-* Raciocínio: [Explicação passo a passo didática e precisa]
-
-Questão 2 (Discursiva Conceitual - Média)
-[Questão conceitual focada na definição, propriedades ou análise/correção de um erro fictício de cálculo.]
-* Resposta Correta: [...]
-* Raciocínio: [...]
-
-Questão 3 (Discursiva Contextualizada - Média/Difícil)
-[Enunciado complexo situado em contexto real/cotidiano brasileiro, exigindo análise interpretativa.]
-* Resposta Correta: [...]
-* Raciocínio: [...]
-* Contexto Real: [Descrição rápida do tema do mundo real adotado]
-
-Questão 4 (Prática Aplicada - Difícil)
-[Problema prático que exige a resolução em 3 ou 4 etapas matemáticas sequenciais distintas e ativas.]
-* Resposta Correta: [Resultado final numérico formatado conforme as regras de separadores]
-* Raciocínio: [Memória de cálculo detalhada etapa por etapa usando caracteres Unicode]
-
-Questão 5 (Prática Aplicada - Muito Difícil - Raciocínio Inverso)
-[Problema complexo de múltiplas etapas (4 a 5 passos ativos) exigindo raciocínio inverso.]
-* Resposta Correta: [Resultado final numérico formatado]
-* Raciocínio: [Memória de cálculo detalhada etapa por etapa usando caracteres Unicode]
-
---- Fim da Habilidade ---</code></pre>
-            </div>
-
-            <!-- Exemplo Real de Saída Gerada -->
-            <div class="output-example-box">
-              <div class="example-header">
-                <span class="example-tag">Demonstração Empírica</span>
-                <h4>Exemplo Real de Questão Produzida pelo Prompt 1 (Questão 5 - Roraima / Açaí):</h4>
-              </div>
-              <div class="example-body">
-                <p><strong>Enunciado:</strong> <em>"Uma cooperativa de produtores de açaí no interior de Roraima armazena polpa pasteurizada em tanques de resfriamento cilíndricos de aço inox. Devido à padronização do galpão industrial, a altura interna de cada tanque deve ser exatamente igual ao diâmetro de sua base circular. Sabendo que um desses tanques comporta uma capacidade total de 21.195 litros quando completamente cheio, determine, em metros, a altura desse cilindro."</em> (Considere π = 3,14 e 1 m³ = 1.000 L).</p>
-                <div class="example-math-steps">
-                  <div class="step-pill"><strong>Etapa 1:</strong> Conversão: 21.195 L = 21,195 m³</div>
-                  <div class="step-pill"><strong>Etapa 2:</strong> Relação D = 2r ⇒ r = h / 2</div>
-                  <div class="step-pill"><strong>Etapa 3:</strong> V = π · (h/2)² · h = 0,785 · h³</div>
-                  <div class="step-pill"><strong>Etapa 4:</strong> Raciocínio Inverso: h³ = 21,195 ÷ 0,785 = 27</div>
-                  <div class="step-pill"><strong>Etapa 5:</strong> Extração da raiz cúbica: <strong>h = ³√27 = 3,00 metros</strong>.</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Conteúdo da Aba 2: Prompt Matemática Geral -->
-        <div class="tab-pane" id="tab-prompt2">
-          <div class="prompt-card">
-            <div class="prompt-header">
-              <div>
-                <div class="prompt-meta-tags">
-                  <span class="badge badge-accent">📐 Extensão Didática</span>
-                  <span class="badge badge-outline">Fundamental I/II & Médio</span>
-                  <span class="badge badge-outline">Totalmente Customizável</span>
-                </div>
-                <h3 class="prompt-title">Prompt 2 (Extensão): Matemática Geral Parametrizada</h3>
-                <p class="prompt-description">
-                  Permite transpor as mesmas salvaguardas anti-alucinação e o método de etapas ativas para qualquer ano escolar e qualquer conteúdo de Matemática (Álgebra, Funções, Trigonometria, Estatística, etc.).
-                </p>
-              </div>
-              <div class="prompt-actions">
-                <button class="btn btn-primary copy-prompt-btn" data-target="code-prompt2">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-                  Copiar Prompt
-                </button>
-              </div>
-            </div>
-
-            <div class="code-container">
-              <pre><code id="code-prompt2">Aja como um professor de Matemática experiente, especialista em Design Instrucional e Avaliação Formativa, com amplo domínio das diretrizes curriculares da BNCC para o [INSERIR ANO/SÉRIE, ex: 1º Ano do Ensino Médio / 7º Ano do Ensino Fundamental], comprometido com o rigor conceitual e a ética educacional.
-
-Sua tarefa é elaborar uma bateria avaliativa de alto nível cognitivo com [INSERIR QUANTIDADE, ex: 5 ou 10] questões matemáticas, centradas exclusivamente no tema e nas habilidades descritas a seguir:
-
---- INFORMAÇÕES CURRICULARES ---
-* Ano / Etapa Escolar: [INSERIR ANO/SÉRIE]
-* Conteúdo / Tema Central: [INSERIR TEMA, ex: Funções Afins e Quadráticas / Teorema de Pitágoras / Análise Combinatória]
-* Habilidade(s) da BNCC: [INSERIR CÓDIGOS OU DESCRIÇÃO DAS HABILIDADES]
-* Recorte Regional / Contextual: [INSERIR FOCO REGIONAL, ex: Realidade da Região Norte / Contexto Urbano e Rural / Economia Solidária]
---- FIM DAS INFORMAÇÕES ---
-
-ESTRUTURA DE PROGRESSÃO PEDAGÓGICA POR BLOCO:
-1. Questão 1: Conceitual Fundamental (compreensão sólida do princípio matemático sem cálculo exaustivo).
-2. Questão 2: Análise de Erro ou Propriedades (apresenta um raciocínio comum com equívoco para o aluno identificar e corrigir, ou desafia uma generalização).
-3. Questão 3: Situação-Problema Contextualizada (ancorada em dados reais e factíveis do cotidiano brasileiro/regional).
-4. Questão 4: Aplicação Prática Avançada (exige resolução estrita de 3 a 4 etapas matemáticas ativas).
-5. Questão 5: Aplicação Prática em Raciocínio Inverso (fornece a condição/valor final e exige a dedução da configuração ou parâmetro inicial em 4 a 5 etapas ativas).
-
-REGRAS RÍGIDAS DE CONTROLE E FORMATAÇÃO:
-1. Auditoria Interna Prévia (Anti-Alucinação):
-   - Antes de redigir a versão final, resolva as contas mentalmente passo a passo.
-   - Refaça os cálculos intermediários para garantir que o gabarito é exato e que o problema não possui inconsistência lógica ou valores impossíveis no mundo real.
-2. Formatação 100% Limpa (Zero LaTeX):
-   - PROIBIDO o uso de códigos ou símbolos em LaTeX (nunca use $ ou \).
-   - Utilize unicamente caracteres Unicode para potências, raízes, letras gregas e frações (ex: x², x³, √, π, θ, ±, ³, ⁄).
-   - Pontuação numérica brasileira: ponto para milhares (ex: 25.000) e vírgula para decimais (ex: 3,14).
-3. Critério de Etapas Ativas:
-   - Nas Questões 4 e 5, cada etapa da resolução deve conter uma transformação matemática real (cálculo aritmético, manipulação algébrica, conversão dimensional ou substituição em equação).
-   - Passos meramente textuais ("leitura de dados", "identificação da fórmula") NÃO são aceitos como etapas.
-4. Diversificação de Contextos:
-   - Proibido repetir o mesmo tema de fundo em questões consecutivas. Alterne entre ciências naturais, esportes, logística comercial, finanças familiares, tecnologia e sustentabilidade.
-
-MODELO VISUAL DE SAÍDA:
-Gere cada questão no seguinte formato legível:
-
-Questão [Número] ([Tipo de Questão - Nível])
-[Texto claro, objetivo e contextualizado do enunciado.]
-* Resposta Correta: [Resultado final com unidade de medida e valor destacado]
-* Raciocínio Passo a Passo: [Resolução completa, etapa por etapa, detalhando as operações ativas]
-* Critério de Avaliação: [O que o professor deve observar na resposta do aluno para atribuir nota]</code></pre>
-            </div>
-          </div>
-        </div>
-
-        <!-- Conteúdo da Aba 3: Prompt Universal Multidisciplinar -->
-        <div class="tab-pane" id="tab-prompt3">
-          <div class="prompt-card">
-            <div class="prompt-header">
-              <div>
-                <div class="prompt-meta-tags">
-                  <span class="badge badge-accent">🌐 Aplicação Universal</span>
-                  <span class="badge badge-outline">Ciências Humanas e da Natureza</span>
-                  <span class="badge badge-outline">Todas as Disciplinas</span>
-                </div>
-                <h3 class="prompt-title">Prompt 3 (Universal): Gerador Multidisciplinar</h3>
-                <p class="prompt-description">
-                  Transpõe as salvaguardas de design instrucional para Física, Química, Biologia, Geografia, História, Filosofia, Sociologia e Língua Portuguesa.
-                </p>
-              </div>
-              <div class="prompt-actions">
-                <button class="btn btn-primary copy-prompt-btn" data-target="code-prompt3">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-                  Copiar Prompt
-                </button>
-              </div>
-            </div>
-
-            <div class="code-container">
-              <pre><code id="code-prompt3">Aja como um educador sênior, especialista em Design Instrucional, Avaliação Formativa e Matriz de Competências da BNCC, com ampla experiência na docência da disciplina de [INSERIR DISCIPLINA, ex: Física / Geografia / História / Biologia / Química].
-
-Sua meta é elaborar uma avaliação diagnóstica/formativa desafiadora com [INSERIR NÚMERO, ex: 5] questões inéditas, rigorosamente ancoradas no seguinte programa curricular:
-
---- PROGRAMA CURRICULAR ---
-* Disciplina: [INSERIR DISCIPLINA]
-* Etapa / Ano Escolar: [INSERIR SÉRIE/ANO, ex: 2º Ano do Ensino Médio / 8º Ano do Ensino Fundamental]
-* Unidade Temática / Conteúdo: [INSERIR CONTEÚDO, ex: Termodinâmica / Revolução Industrial / Ciclos Biogeoquímicos / Geopolítica dos Recursos Hídricos]
-* Habilidade(s) Alvo: [INSERIR HABILIDADES BNCC OU OBJETIVOS DE APRENDIZAGEM]
-* Tema Transversal Contemporâneo: [INSERIR TEMA, ex: Meio Ambiente, Direitos Humanos, Tecnologia e Sociedade]
---- FIM DO PROGRAMA ---
-
-ESTRUTURA PEDAGÓGICA DA BATERIA (ORDEM DE COMPLEXIDADE):
-* Questão 1 (Conceitual Interpretativa - Média): Explora a definição essencial do fenômeno, processo ou conceito, exigindo que o estudante diferencie fatos de noções superficiais.
-* Questão 2 (Análise Crítica de Premissa / Identificação de Equívoco - Média): Apresenta uma afirmação ou argumento frequentemente distorcido no senso comum para que o estudante identifique a inconsistência com base no referencial científico da disciplina.
-* Questão 3 (Estudo de Caso / Contextualização Real - Média/Difícil): Situação autêntica ambientada na realidade contemporânea brasileira ou regional, exigindo interpretação de dados, cenários ou fontes históricas/científicas.
-* Questão 4 (Aplicação Multietapas - Difícil): Resolução que demande 3 a 4 etapas ativas de inferência, encadeamento causal ou cálculo/demonstração.
-* Questão 5 (Raciocínio Inverso / Análise Sistêmica - Muito Difícil): Fornece o desfecho, consequência histórica, impacto ecológico ou valor final e exige que o aluno deduza retroativamente as condições iniciais, causas estruturais ou parâmetros que originaram aquele quadro.
-
-DIRETRIZES DE CONTROLE E FORMATO:
-1. Consistência e Checagem Factual (Anti-Alucinação):
-   - Realize uma validação interna de todas as datas, dados empíricos, fórmulas científicas ou citações antes da geração da questão.
-   - Garanta que as relações de causa e efeito sejam sólidas e sem anacronismos ou pseudociência.
-2. Apresentação Clara sem Poluição de Código:
-   - Não utilize código LaTeX. Toda simbologia química, física ou matemática deve usar caracteres Unicode (ex: CO₂, H₂SO₄, ΔS, λ, °C, 10³, m/s²).
-   - Pontuação numérica padrão brasileira (vírgula decimal).
-3. Complexidade Efetiva:
-   - No campo "Raciocínio / Gabarito Comentado", evite respostas vagas. Explicite os elos lógicos da cadeia explicativa exigida do estudante.
-4. Diversidade Temática:
-   - Não repita o mesmo recorte temático em duas questões.
-
-MODELO DE SAÍDA VISUAL:
-
-Questão [Número] ([Tipo da Questão])
-[Enunciado rico, preciso e com linguagem acessível à faixa etária indicada.]
-* Gabarito / Resposta Esperada: [Síntese clara e conclusiva da resposta]
-* Padrão de Resposta / Critérios de Correção: [Passo a passo com os argumentos, etapas ou cálculos fundamentais]
-* Justificativa Pedagógica: [Breve explicação de como o item avalia a habilidade curricular declarada]</code></pre>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Seção: Os 8 Pilares da Arquitetura (#metodologia) -->
-    <section class="section-container" id="metodologia">
-      <div class="container">
-        <div class="section-header text-center">
-          <span class="section-kicker">Metodologia Científica</span>
-          <h2 class="section-title">Os 8 Pilares da Arquitetura do Prompt Mestre</h2>
-          <p class="section-desc">
-            Cada instrução adicionada ao prompt foi empiricamente testada para mitigar vieses de probabilidade estatística dos LLMs e assegurar o máximo rigor didático.
-          </p>
-        </div>
-
-        <div class="pillars-grid">
-          <div class="pillar-card">
-            <div class="pillar-number">01</div>
-            <h4>Persona Especialista</h4>
-            <p>Ativa o subconjunto latente da rede neural focado em design instrucional, rigor conceitual e avaliação formativa da BNCC.</p>
-          </div>
-
-          <div class="pillar-card">
-            <div class="pillar-number">02</div>
-            <h4>Cadeia de Pensamento (CoT)</h4>
-            <p>Obriga a IA a gastar orçamento de inferência resolvendo as contas duas vezes em rascunho interno antes de escrever o enunciado.</p>
-          </div>
-
-          <div class="pillar-card">
-            <div class="pillar-number">03</div>
-            <h4>Etapas Matemáticas Ativas</h4>
-            <p>Substitui estimativas subjetivas de tempo por 3 a 5 transformações reais (operações aritméticas, manipulações algébricas ou conversões).</p>
-          </div>
-
-          <div class="pillar-card">
-            <div class="pillar-number">04</div>
-            <h4>Raciocínio Inverso Calibrado</h4>
-            <p>Baseado na Teoria da Variação de Marton: fornece o valor final e exige a dedução de variáveis ou parâmetros iniciais ocultos.</p>
-          </div>
-
-          <div class="pillar-card">
-            <div class="pillar-number">05</div>
-            <h4>Saída Limpa (Zero LaTeX)</h4>
-            <p>Uso estrito de caracteres Unicode (x², π, √, ±). O item sai pronto para cópia direta no Microsoft Word sem desconfigurar.</p>
-          </div>
-
-          <div class="pillar-card">
-            <div class="pillar-number">06</div>
-            <h4>Veto à Repetição de Nichos</h4>
-            <p>Bloqueia a tendência estatística dos LLMs de repetir o mesmo cenário (ex: caixas-d'água), forçando diversidade temática genuína.</p>
-          </div>
-
-          <div class="pillar-card">
-            <div class="pillar-number">07</div>
-            <h4>Realidade Amazônica</h4>
-            <p>Ancoragem de situações em bacias hidrográficas, logística fluvial, conservação florestal e economia regional do Norte do Brasil.</p>
-          </div>
-
-          <div class="pillar-card">
-            <div class="pillar-number">08</div>
-            <h4>Progressão Oblíqua</h4>
-            <p>Escala cognitiva padronizada de 5 níveis: Conceitual &rarr; Análise de Erro &rarr; Contextualizada &rarr; Difícil &rarr; Raciocínio Inverso.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Seção: Fundamentação Epistemológica -->
-    <section class="section-container bg-surface">
-      <div class="container">
-        <div class="section-header text-center">
-          <span class="section-kicker">Referencial Teórico (Tutorial 2)</span>
-          <h2 class="section-title">Diálogo com os Grandes Nomes da Educação</h2>
-          <p class="section-desc">
-            A pesquisa não é apenas técnica computacional; ela se sustenta nas teorias pedagógicas contemporâneas mais consagradas.
-          </p>
-        </div>
-
-        <div class="theorists-grid">
-          <div class="theorist-card">
-            <div class="theorist-badge">Neil Selwyn & UNESCO</div>
-            <h4>Parceria Cognitiva</h4>
-            <p>A IA generativa não substitui a docência nem atua como oráculo indiscutível; funciona como andaime tecnológico sob curadoria crítica do professor.</p>
-          </div>
-
-          <div class="theorist-card">
-            <div class="theorist-badge">Yves Chevallard</div>
-            <h4>Transposição Didática</h4>
-            <p>O saber sábio da ciência computacional e da matemática pura é reelaborado para se tornar o saber a ensinar e o saber ensinado acessível.</p>
-          </div>
-
-          <div class="theorist-card">
-            <div class="theorist-badge">Ference Marton</div>
-            <h4>Teoria da Variação</h4>
-            <p>A compreensão profunda ocorre quando mantemos certos aspectos invariantes e variamos dimensões críticas, estimulando raciocínio inverso.</p>
-          </div>
-
-          <div class="theorist-card">
-            <div class="theorist-badge">Helena Cury & Raffaella Borasi</div>
-            <h4>Análise de Erros</h4>
-            <p>O erro como janela cognitiva e recurso didático fértil, incorporado intencionalmente na Questão 2 para desconstruir equívocos comuns.</p>
-          </div>
-
-          <div class="theorist-card">
-            <div class="theorist-badge">Ubiratan D'Ambrosio</div>
-            <h4>Etnomatemática</h4>
-            <p>Matemática contextualizada nos fazeres e saberes de grupos culturais reais, valorizando o território e a realidade amazônica brasileira.</p>
-          </div>
-
-          <div class="theorist-card">
-            <div class="theorist-badge">Jason Wei et al.</div>
-            <h4>Chain-of-Thought (CoT)</h4>
-            <p>Fundamentação da ciência da computação que demonstra o salto de precisão em modelos de linguagem ao decompor problemas em etapas lógicas intermediárias.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Seção: Áudio & Acessibilidade Sonora (#audio) -->
-    <section class="section-container" id="audio">
-      <div class="container">
-        <div class="audio-banner-card">
-          <div class="audio-content">
-            <div class="audio-badge">
-              <span class="audio-wave-icon">
-                <span></span><span></span><span></span><span></span>
-              </span>
-              Acessibilidade Sonora & Inclusão
-            </div>
-            <h2 class="audio-title">Ouça a Narração Acadêmica do Trabalho</h2>
-            <p class="audio-description">
-              Disponibilizamos a versão narrada e humanizada dos documentos para pesquisadores, estudantes com deficiência visual ou para quem deseja absorver o conteúdo em formato áudio/podcast.
-            </p>
-
-            <div class="audio-track-selector">
-              <button class="track-btn active" data-src="audio/Narracao_Humanizada_Plano_e_Tutorial.mp3" data-title="Faixa 1: Apresentação do Projeto & Engenharia de Prompt">
-                Faixa 1: Apresentação do Projeto & Prompts
-              </button>
-              <button class="track-btn" data-src="audio/Narracao_Tutorial_2_Base_Teorica.mp3" data-title="Faixa 2: Fundamentação Teórica & Parceria Cognitiva">
-                Faixa 2: Base Teórica & Epistemológica
-              </button>
-            </div>
-
-            <!-- Player de Áudio Customizado -->
-            <div class="custom-player">
-              <div class="player-current-title" id="player-title">Faixa 1: Apresentação do Projeto & Engenharia de Prompt</div>
-              <audio id="main-audio" preload="metadata">
-                <source src="audio/Narracao_Humanizada_Plano_e_Tutorial.mp3" type="audio/mpeg">
-                Seu navegador não suporta reprodução de áudio.
-              </audio>
-              <div class="player-controls">
-                <button class="play-btn" id="play-pause-btn" aria-label="Reproduzir áudio">
-                  <svg class="play-icon" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-                  <svg class="pause-icon" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" style="display:none;"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
-                </button>
-                <div class="player-timeline">
-                  <span class="time-current" id="time-current">00:00</span>
-                  <input type="range" class="progress-bar" id="audio-progress" value="0" min="0" max="100">
-                  <span class="time-total" id="time-total">--:--</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Seção: Documentos Oficiais & Download do PDF (#documentos) -->
-    <section class="section-container bg-surface" id="documentos">
-      <div class="container">
-        <div class="section-header text-center">
-          <span class="section-kicker">Publicação Oficial Completa</span>
-          <h2 class="section-title">Documento Acadêmico em PDF & Citação</h2>
-          <p class="section-desc">
-            Acesse o documento original completo de pesquisa e copie os metadados de citação para o seu trabalho acadêmico.
-          </p>
-        </div>
-
-        <div class="document-download-card">
-          <div class="document-info">
-            <div class="document-icon-wrapper">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-            </div>
-            <div class="document-details">
-              <span class="badge badge-success">PDF Oficial Final</span>
-              <h3>Produto_Academico_Engenharia_de_Prompt_Axl.pdf</h3>
-              <p>Trabalho completo contendo o relatório de pesquisa empírica, dados dos testes, catálogo de prompts, análises de alucinação e validação pedagógica na UFRR.</p>
-              <div class="document-meta-specs">
-                <span>📁 Formato: PDF</span>
-                <span>⚖️ Tamanho: ~4,15 MB</span>
-                <span>📅 Data: 29 de Agosto de 2026</span>
-                <span>🏛️ Instituição: UFRR / CCT</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="document-actions">
-            <a href="documentos/Produto_Academico_Engenharia_de_Prompt_Axl.pdf" class="btn btn-primary btn-lg" download="Produto_Academico_Engenharia_de_Prompt_Axl.pdf">
+            <a href="docs/kahoot-local-pibid.zip" class="btn btn-secondary" download>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-              Baixar PDF Completo
+              Baixar Projeto (.ZIP)
             </a>
-            <a href="documentos/Produto_Academico_Engenharia_de_Prompt_Axl.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-lg">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-              Abrir no Navegador
+            <a href="docs/Manual_Kahoot_Local_PIBID.pdf" class="btn btn-ghost" download>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              Manual em PDF
             </a>
           </div>
-        </div>
 
-        <!-- Caixa de Citação Científica -->
-        <div class="citation-box">
-          <div class="citation-header">
-            <h4>Como Citar este Trabalho Científico</h4>
-            <div class="citation-tabs">
-              <button class="cite-tab-btn active" data-cite="abnt">Formato ABNT</button>
-              <button class="cite-tab-btn" data-cite="bibtex">BibTeX (LaTeX)</button>
+          <!-- Métricas de Destaque -->
+          <div class="metrics-row">
+            <div class="metric-box">
+              <span class="m-val">0 MB</span>
+              <span class="m-lbl">Dados Móveis Gastos</span>
             </div>
-          </div>
-          
-          <div class="citation-content">
-            <div class="cite-pane active" id="cite-abnt">
-              <code id="text-cite-abnt">SEABRA, Axl Oliveira; SOUZA, Marcelo Batista de. Engenharia de Prompts para Avaliação Educacional: Da Pesquisa Empírica à Aplicação Multidisciplinar em Sala de Aula. Universidade Federal de Roraima (UFRR), Centro de Ciências e Tecnologia (CCT), Programa Institucional de Bolsas de Iniciação em Desenvolvimento Tecnológico e Inovação (PIBIT), Boa Vista, 2026.</code>
+            <div class="metric-box">
+              <span class="m-val">&lt; 10ms</span>
+              <span class="m-lbl">Tempo de Resposta Local</span>
             </div>
-            <div class="cite-pane" id="cite-bibtex">
-              <pre><code id="text-cite-bibtex">@misc{seabra2026engenharia,
-  author = {Seabra, Axl Oliveira and Souza, Marcelo Batista de},
-  title = {Engenharia de Prompts para Avalia{\c{c}}{\~a}o Educacional: Da Pesquisa Emp{\'i}rica {\`a} Aplica{\c{c}}{\~a}o Multidisciplinar em Sala de Aula},
-  institution = {Universidade Federal de Roraima},
-  howpublished = {Produto Tecnol{\'o}gico e Did{\'a}tico - PIBIT/TIDIEM/UFRR},
-  year = {2026},
-  address = {Boa Vista, RR}
-}</code></pre>
+            <div class="metric-box">
+              <span class="m-val">100%</span>
+              <span class="m-lbl">Livre & Sem Anúncios</span>
             </div>
-          </div>
-
-          <div class="citation-footer">
-            <button class="btn btn-secondary btn-sm" id="copy-citation-btn">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-              Copiar Citação
-            </button>
+            <div class="metric-box">
+              <span class="m-val">1 Clique</span>
+              <span class="m-lbl">Para Iniciar no Windows</span>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- Seção: Repositório Modular de Trabalhos & Pesquisas (#repositorio) -->
-    <section class="section-container" id="repositorio">
-      <div class="container">
-        <div class="section-header text-center">
-          <span class="section-kicker">Produção Científica Contínua</span>
-          <h2 class="section-title">Repositório de Pesquisas & Trabalhos</h2>
-          <p class="section-desc">
-            Espaço dinâmico para acompanhamento das publicações, relatórios técnicos e novos projetos desenvolvidos por Axl Oliveira Seabra.
-          </p>
-        </div>
-
-        <!-- Filtros de Pesquisa -->
-        <div class="repo-filters">
-          <button class="filter-btn active" data-filter="all">Todos os Trabalhos</button>
-          <button class="filter-btn" data-filter="ia">IA & Engenharia de Prompt</button>
-          <button class="filter-btn" data-filter="matematica">Educação Matemática</button>
-          <button class="filter-btn" data-filter="tecnologia">Inovação Tecnológica</button>
-        </div>
-
-        <div class="repo-grid">
-          <!-- Card 1 -->
-          <div class="repo-card" data-category="ia matematica tecnologia">
-            <div class="repo-card-top">
-              <span class="status-badge status-published">Publicado • 2026</span>
-              <span class="repo-tag">PIBIT / UFRR</span>
-            </div>
-            <h3 class="repo-title">Engenharia de Prompts para Avaliação Educacional</h3>
-            <p class="repo-summary">
-              Arquitetura de prompts estruturados para mitigação de alucinações aritméticas em LLMs e geração de avaliações alinhadas às habilidades EF09MA18 e EF09MA19 da BNCC.
-            </p>
-            <div class="repo-footer">
-              <a href="#prompts" class="repo-link">Ver Prompts & Detalhes &rarr;</a>
-              <a href="documentos/Produto_Academico_Engenharia_de_Prompt_Axl.pdf" class="repo-link" download>PDF (4,15 MB)</a>
-            </div>
-          </div>
-
-          <!-- Card 2 -->
-          <div class="repo-card" data-category="ia tecnologia">
-            <div class="repo-card-top">
-              <span class="status-badge status-published">Concluído • 2026</span>
-              <span class="repo-tag">Fundamentação</span>
-            </div>
-            <h3 class="repo-title">Bases Epistemológicas da Parceria Cognitiva na Educação</h3>
-            <p class="repo-summary">
-              Investigação teórica articulando Neil Selwyn, Yves Chevallard e Ference Marton para estruturar o uso ético e pedagógico de LLMs no ensino de ciências exatas.
-            </p>
-            <div class="repo-footer">
-              <a href="#metodologia" class="repo-link">Ver Fundamentação &rarr;</a>
-              <span class="repo-meta">Tutorial 2</span>
-            </div>
-          </div>
-
-          <!-- Card 3: Kahoot Local PIBID -->
-          <div class="repo-card" data-category="matematica tecnologia" style="border-color: rgba(255, 166, 2, 0.4); box-shadow: 0 0 20px rgba(255, 166, 2, 0.1);">
-            <div class="repo-card-top">
-              <span class="status-badge status-published" style="background: rgba(255, 166, 2, 0.2); color: #ffa602; border-color: rgba(255, 166, 2, 0.4);">Destaque PIBID • 2026</span>
-              <span class="repo-tag">UFRR / Matemática</span>
-            </div>
-            <h3 class="repo-title">Kahoot Local PIBID: Quiz 100% Offline para Escolas</h3>
-            <p class="repo-summary">
-              Plataforma gamificada que transforma o notebook do professor em um servidor Wi-Fi local de alta performance. Os alunos jogam simultaneamente pelos celulares lendo o QR Code, sem precisar de internet ou gastar dados móveis.
-            </p>
-            <div class="repo-footer">
-              <span class="repo-meta" style="color: #ffa602; font-weight: 600;">⚡ Latência &lt; 10ms • Offline</span>
-              <a href="https://github.com/axlseabr-tech/kahoot-local-pibid" target="_blank" class="repo-link" style="color: #ffa602;">Ver no GitHub &nearr;</a>
-            </div>
-          </div>
-
-          <!-- Card 4 -->
-          <div class="repo-card" data-category="matematica">
-            <div class="repo-card-top">
-              <span class="status-badge status-progress">Em Andamento</span>
-              <span class="repo-tag">BNCC Ensino Médio</span>
-            </div>
-            <h3 class="repo-title">Progressão Oblíqua e Raciocínio Inverso na Geometria Espacial</h3>
-            <p class="repo-summary">
-              Expansão do framework para o Ensino Médio: análise de corpos redondos, esferas, cones e pirâmides aplicados a desafios de logística na Região Amazônica.
-            </p>
-            <div class="repo-footer">
-              <span class="status-indicator">Fase de Auditoria Docente</span>
-            </div>
-          </div>
-
-          <!-- Card 5 -->
-          <div class="repo-card" data-category="tecnologia">
-            <div class="repo-card-top">
-              <span class="status-badge status-progress">Em Desenvolvimento</span>
-              <span class="repo-tag">Projetos Científicos</span>
-            </div>
-            <h3 class="repo-title">Mapeamento Visual e Tecnologias de Análise em Ciências da Visão</h3>
-            <p class="repo-summary">
-              Estudo de integração entre processamento de dados e representação clínica para procedimentos de avaliação funcional e optométrica.
-            </p>
-            <div class="repo-footer">
-              <span class="status-indicator">Pesquisa Aplicada</span>
+        <div class="hero-media-col">
+          <div class="media-frame">
+            <img src="assets/kahoot_hero.jpg" alt="Alunos jogando Kahoot Local em sala de aula" class="hero-cover">
+            <div class="media-overlay-badge">
+              <div class="pulse-indicator"></div>
+              <span>Servidor Local Ativo • Latência: 4ms</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Seção Dedicada: Tecnologias Educacionais & Outros Projetos (#projetos-interativos) -->
-    <section class="section-container" id="projetos-interativos">
+    <!-- Seção: Por que o Kahoot Local? -->
+    <section class="section-area" id="por-que">
       <div class="container">
-        <div class="section-header">
-          <span class="badge badge-accent">Aplicações Práticas & Softwares Abertos</span>
-          <h2 class="section-title">Laboratório de Tecnologias & Outros Projetos</h2>
-          <p class="section-subtitle">
-            Além das publicações teóricas e artigos acadêmicos, este espaço é dedicado a compartilhar softwares, clones educacionais, simuladores e ferramentas interativas desenvolvidas para sala de aula.
+        <div class="title-center">
+          <span class="kicker">A Realidade da Escola Pública</span>
+          <h2 class="title-lg">Por que Criamos uma Versão 100% Offline?</h2>
+          <p class="desc-text">
+            O Kahoot original é uma excelente ferramenta pedagógica, mas na prática cotidiana da maioria das escolas públicas do Brasil ele se torna inviável.
           </p>
         </div>
 
-        <div class="projects-showcase-grid">
-          <!-- Card de Destaque: Kahoot Local PIBID -->
-          <div class="project-feature-card">
-            <div class="project-img-wrapper">
-              <img src="assets/kahoot_preview.jpg" alt="Kahoot Local PIBID em Sala de Aula">
-              <div class="project-badge-overlay">
-                ⚡ 100% Offline • Sem Internet
-              </div>
-            </div>
-
-            <div class="project-content-body">
-              <div class="project-pills">
-                <span class="pill pill-purple">PIBID Matemática • UFRR</span>
-                <span class="pill pill-green">Latência &lt; 10ms</span>
-                <span class="pill pill-blue">Web Audio API</span>
-              </div>
-
-              <h3 class="project-title">Kahoot Local PIBID — Quiz Interativo para Escolas</h3>
-
-              <p class="project-desc">
-                Solução tecnológica desenvolvida para vencer a precariedade de internet nas escolas públicas. Transforma o notebook do professor em um servidor Wi-Fi local de alta velocidade. Os alunos jogam simultaneamente pelos celulares lendo um QR Code gigante na lousa, sem gastar dados móveis e com botões 3D coloridos, efeitos sonoros sintetizados e pódio com confetes.
-              </p>
-
-              <div class="project-actions-row">
-                <a href="https://axlseabr-tech.github.io/kahoot-local-pibid/" target="_blank" class="btn btn-primary" style="background: linear-gradient(135deg, #6a25d9, #46178f);">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-                  Acessar Site & Simulador Demo &nearr;
-                </a>
-                <a href="https://github.com/axlseabr-tech/kahoot-local-pibid" target="_blank" class="btn btn-outline">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                  Ver Código no GitHub
-                </a>
-              </div>
-            </div>
+        <div class="comparison-grid">
+          <!-- Coluna 1: Kahoot Comercial -->
+          <div class="comp-card card-commercial">
+            <div class="comp-badge bad">✕ Kahoot! Comercial (Nuvem)</div>
+            <h3>As Barreiras na Escola Pública</h3>
+            <ul class="comp-list list-bad">
+              <li><strong>Dependência Crítica de Internet:</strong> Qualquer oscilação na rede derruba a partida e desmotiva a turma inteira.</li>
+              <li><strong>Limitação Estrita de Jogadores:</strong> Planos gratuitos limitam severamente a quantidade de alunos conectados.</li>
+              <li><strong>Consumo de Dados dos Alunos:</strong> Nem todos os estudantes possuem pacotes de 4G para carregar imagens pesadas.</li>
+              <li><strong>Anúncios e Burocracia:</strong> Telas intermediárias de propaganda e exigência de cadastros/logins constantes.</li>
+            </ul>
           </div>
 
-          <!-- Card de Slot: Próximos Projetos -->
-          <div class="project-slot-card">
-            <div class="slot-icon">🚀</div>
-            <span class="badge badge-subtle" style="margin-bottom: 12px;">Em Desenvolvimento</span>
-            <h3>Próximos Projetos & Softwares</h3>
-            <p>
-              Este espaço está reservado para novos aplicativos, simuladores matemáticos, ferramentas de IA e recursos didáticos abertos que serão adicionados ao longo das pesquisas.
-            </p>
-            <div style="font-size: 0.82rem; color: var(--text-muted); padding: 8px 14px; background: rgba(0, 210, 255, 0.05); border-radius: 8px; border: 1px solid rgba(0, 210, 255, 0.15);">
-              💡 <em>Novas ferramentas podem ser adicionadas facilmente a este painel!</em>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Seção: Equipe & Instituição (#autores) -->
-    <section class="section-container" id="autores">
-      <div class="container">
-        <div class="section-header text-center">
-          <span class="section-kicker">Créditos Acadêmicos</span>
-          <h2 class="section-title">Autor e Equipe de Pesquisa</h2>
-          <p class="section-desc">
-            Trabalho desenvolvido no Centro de Ciências e Tecnologia da Universidade Federal de Roraima.
-          </p>
-        </div>
-
-        <div class="team-grid">
-          <div class="author-profile-card">
-            <img src="assets/emblem.jpg" alt="Axl Oliveira Seabra" class="author-avatar">
-            <div class="author-info">
-              <h3>Axl Oliveira Seabra</h3>
-              <p class="author-title">Pesquisador Principal • Autor do Produto Didático</p>
-              <p class="author-bio">
-                Pesquisador do Programa Institucional de Bolsas de Iniciação em Desenvolvimento Tecnológico e Inovação (PIBIT / UFRR), integrante do grupo de pesquisa TIDIEM. Atua na interface entre Inteligência Artificial, Engenharia de Prompt e Educação Matemática.
-              </p>
-              <div class="author-badges">
-                <span class="badge badge-outline">UFRR</span>
-                <span class="badge badge-outline">PIBIT</span>
-                <span class="badge badge-outline">TIDIEM</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="collaborators-box">
-            <h4>Corpo Docente e Colaboradores da Pesquisa:</h4>
-            <ul class="collab-list">
-              <li>
-                <strong>Prof. Dr. Marcelo Batista de Souza</strong>
-                <span>Orientador da Pesquisa • UFRR / CCT</span>
-              </li>
-              <li>
-                <strong>Profa. Dra. Juliana Silveira Marcondes</strong>
-                <span>Colaboradora e Avaliadora • UFRR</span>
-              </li>
-              <li>
-                <strong>Rhuan Nunes André Agostinho</strong>
-                <span>Pesquisador Colaborador</span>
-              </li>
-              <li>
-                <strong>Isaque Vieira Matos</strong>
-                <span>Pesquisador Colaborador</span>
-              </li>
+          <!-- Coluna 2: Kahoot Local PIBID -->
+          <div class="comp-card card-local">
+            <div class="comp-badge good">✓ Kahoot Local PIBID (Offline)</div>
+            <h3>A Liberdade da Rede Local</h3>
+            <ul class="comp-list list-good">
+              <li><strong>100% Desconectado da Internet:</strong> Funciona mesmo se a escola inteira estiver sem sinal de internet ou luz de rede externa.</li>
+              <li><strong>Jogadores Ilimitados & Sem Planos:</strong> Conecte 40, 50 ou mais alunos simultaneamente na rede local do notebook.</li>
+              <li><strong>Conexão Instantânea via QR Code:</strong> O aluno apenas aponta a câmera para a lousa e já está no jogo em 3 segundos.</li>
+              <li><strong>Sons Nativos Sintetizados:</strong> Áudio interativo criado em código puro (Web Audio API) sem baixar nenhum arquivo externo.</li>
+              <li><strong>Editor de Quizzes Integrado:</strong> Crie seus próprios questionários para qualquer matéria pelo próprio navegador.</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Seção: Comunicação, Contatos & Mural de Comentários (#comunidade) -->
-    <section class="section-container bg-surface" id="comunidade">
+    <!-- Seção: Simulador Demo Interativo ao Vivo -->
+    <section class="section-area bg-gamified" id="simulador">
       <div class="container">
-        <div class="section-header text-center">
-          <span class="section-kicker">Comunicação & Parceria</span>
-          <h2 class="section-title">Contatos & Mural de Comentários</h2>
-          <p class="section-desc">
-            Espaço aberto para professores, estudantes e pesquisadores deixarem suas impressões, avaliações e entrarem em contato direto com o autor.
+        <div class="title-center">
+          <span class="kicker">Experimente Agora Mesmo</span>
+          <h2 class="title-lg">Simulador Interativo do Jogo</h2>
+          <p class="desc-text">
+            Veja como os alunos vivenciam a resposta na tela do celular. Escolha a resposta correta antes que o cronômetro chegue a zero!
+          </p>
+        </div>
+
+        <div class="demo-game-container">
+          <!-- Topo do Jogo: Pergunta e Timer -->
+          <div class="demo-game-screen" id="demo-screen">
+            <div class="demo-header">
+              <div class="demo-question-number">Questão 1 de 1 • Matemática 9º Ano</div>
+              <div class="demo-timer" id="demo-timer">20</div>
+            </div>
+
+            <div class="demo-question-box">
+              <h3 id="demo-question-text">Qual é a área de um círculo cujo raio mede 3 metros? (Considere π = 3,14)</h3>
+              <div class="demo-formula">Fórmula: Área = π · r²</div>
+            </div>
+
+            <!-- Botões das 4 Respostas estilo Kahoot -->
+            <div class="demo-answers-grid" id="demo-options">
+              <button class="answer-btn ans-red" data-correct="false" data-letter="A">
+                <span class="btn-shape">▲</span>
+                <span class="btn-text">18,84 m²</span>
+              </button>
+
+              <button class="answer-btn ans-blue" data-correct="true" data-letter="B">
+                <span class="btn-shape">◆</span>
+                <span class="btn-text">28,26 m²</span>
+              </button>
+
+              <button class="answer-btn ans-yellow" data-correct="false" data-letter="C">
+                <span class="btn-shape">●</span>
+                <span class="btn-text">9,42 m²</span>
+              </button>
+
+              <button class="answer-btn ans-green" data-correct="false" data-letter="D">
+                <span class="btn-shape">■</span>
+                <span class="btn-text">31,40 m²</span>
+              </button>
+            </div>
+
+            <!-- Feedback de Resposta (Invisível no início) -->
+            <div class="demo-feedback-overlay" id="demo-feedback">
+              <div class="feedback-content" id="feedback-body">
+                <!-- Preenchido via JavaScript -->
+              </div>
+              <button class="btn btn-primary" id="btn-restart-demo">Jogar Novamente ⟳</button>
+            </div>
+          </div>
+
+          <div class="demo-instructions-note">
+            <p>💡 <em>No jogo real em sala de aula, as perguntas e alternativas são projetadas na lousa pelo notebook, e a tela do smartphone do aluno exibe os 4 botões coloridos de resposta rápida com pontuação por velocidade!</em></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção: Como Funciona o Ponto de Acesso (Arquitetura) -->
+    <section class="section-area" id="como-funciona">
+      <div class="container">
+        <div class="title-center">
+          <span class="kicker">Arquitetura Sem Fio</span>
+          <h2 class="title-lg">O Segredo da Conexão sem Gastar Internet</h2>
+          <p class="desc-text">
+            Entenda a engenharia simples e engenhosa que permite aos celulares conversarem com o computador do professor sem precisar de roteador externo.
+          </p>
+        </div>
+
+        <div class="hotspot-diagram-card">
+          <div class="diagram-grid">
+            <div class="diagram-node node-server">
+              <div class="node-icon">💻</div>
+              <h4>Notebook do Professor</h4>
+              <span class="badge-role">Servidor Local (Node.js)</span>
+              <p>Ativa o <strong>Ponto de Acesso Móvel do Windows</strong> (Hotspot Wi-Fi). Processa as respostas e projeta o placar na lousa.</p>
+            </div>
+
+            <div class="diagram-pulse-arrow">
+              <div class="wifi-wave-icon">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="arrow-text">Rede Wi-Fi Local<br><strong>Sem Dados / &lt; 10ms</strong></span>
+            </div>
+
+            <div class="diagram-node node-clients">
+              <div class="node-icon">📱📱📱</div>
+              <h4>Celulares dos Alunos</h4>
+              <span class="badge-role">Clientes Web</span>
+              <p>Conectam na rede do notebook e abrem o jogo no navegador escaneando o QR Code na lousa.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção: Passo a Passo do Professor -->
+    <section class="section-area bg-surface" id="passo-a-passo">
+      <div class="container">
+        <div class="title-center">
+          <span class="kicker">Facilidade de Uso</span>
+          <h2 class="title-lg">Como Jogar em Sala: Guia em 4 Passos</h2>
+          <p class="desc-text">
+            Criado pensando em professores que não têm tempo para configurações complexas. Tudo funciona com arquivos de 1 clique.
+          </p>
+        </div>
+
+        <div class="steps-flow-grid">
+          <div class="flow-card">
+            <div class="step-num">1</div>
+            <h4>Instalação Inicial (1 Vez)</h4>
+            <p>Baixe a pasta do jogo e dê dois cliques no arquivo:</p>
+            <code>instalar_dependencias.bat</code>
+            <p class="step-sub">Ele baixa as bibliotecas necessárias de forma 100% automática.</p>
+          </div>
+
+          <div class="flow-card">
+            <div class="step-num">2</div>
+            <h4>Ligue o Ponto de Acesso</h4>
+            <p>No Windows, pressione <strong>Win + I</strong> &rarr; <em>Rede e Internet</em> &rarr; <strong>Ponto de Acesso Móvel</strong> e clique em <em>Ativado</em>.</p>
+            <p class="step-sub">Dica: Crie uma rede chamada <code>Quiz-Matematica</code> com senha fácil (ex: <code>12345678</code>).</p>
+          </div>
+
+          <div class="flow-card">
+            <div class="step-num">3</div>
+            <h4>Inicie a Partida</h4>
+            <p>Dê dois cliques no arquivo:</p>
+            <code>iniciar_quiz.bat</code>
+            <p class="step-sub">O servidor liga e o navegador abre na hora com o <strong>QR Code</strong> gigante para projetar!</p>
+            <div style="margin-top: 10px; padding: 8px 10px; background: rgba(255, 166, 2, 0.1); border-left: 3px solid #ffa602; border-radius: 4px; font-size: 0.76rem; color: var(--text-muted);">
+              <strong>⚠️ Aviso do Windows:</strong> Se o sistema bloquear a execução, clique com o botão direito no arquivo &rarr; <em>Propriedades</em> &rarr; marque a caixa <strong>[✓] Desbloquear</strong> e clique em <em>OK</em>.
+            </div>
+          </div>
+
+          <div class="flow-card">
+            <div class="step-num">4</div>
+            <h4>Alunos no Jogo & Pódio</h4>
+            <p>Os estudantes apontam o celular para o QR Code, digitam seus nomes e a partida começa com ranking ao vivo e confetes!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção: Downloads e Documentos -->
+    <section class="section-area" id="downloads">
+      <div class="container">
+        <div class="title-center">
+          <span class="kicker">Recurso Educacional Aberto</span>
+          <h2 class="title-lg">Downloads & Documentação Oficial</h2>
+          <p class="desc-text">
+            Baixe o código-fonte completo pronto para rodar e o manual pedagógico formatado para impressão.
+          </p>
+        </div>
+
+        <div class="downloads-deck">
+          <!-- Card 1: ZIP -->
+          <div class="down-card highlight-down">
+            <div class="down-icon-box">📦</div>
+            <div class="down-body">
+              <span class="pill pill-green">Pacote Pronto para Windows</span>
+              <h3>kahoot-local-pibid.zip</h3>
+              <p>Contém o servidor Node.js, scripts executáveis (.bat), quizzes de demonstração de Matemática e o editor integrado.</p>
+              <div class="down-meta">
+                <span>📁 Formato: .ZIP</span>
+                <span>⚖️ Tamanho: ~175 KB</span>
+                <span>⚙️ Requisitos: Windows 10/11</span>
+              </div>
+            </div>
+            <div class="down-action">
+              <a href="docs/kahoot-local-pibid.zip" class="btn btn-primary btn-lg" download="kahoot-local-pibid.zip">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                Baixar Projeto (.ZIP)
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2: Manual PDF -->
+          <div class="down-card">
+            <div class="down-icon-box">📄</div>
+            <div class="down-body">
+              <span class="pill pill-blue">Manual Oficial em PDF</span>
+              <h3>Manual_Kahoot_Local_PIBID.pdf</h3>
+              <p>Guia impresso passo a passo com ilustrações para distribuição entre professores e bolsistas do PIBID.</p>
+              <div class="down-meta">
+                <span>📁 Formato: PDF</span>
+                <span>⚖️ Tamanho: ~172 KB</span>
+                <span>🖨️ Pronto para Impressão A4</span>
+              </div>
+            </div>
+            <div class="down-action">
+              <a href="docs/Manual_Kahoot_Local_PIBID.pdf" class="btn btn-secondary btn-lg" download="Manual_Kahoot_Local_PIBID.pdf">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                Baixar Manual (PDF)
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Instruções de Clone via Git -->
+        <div class="git-box">
+          <div class="git-header">
+            <h4>Você também pode clonar o projeto via terminal:</h4>
+            <button class="btn-copy-code" id="btn-copy-git">Copiar Comando</button>
+          </div>
+          <pre><code id="git-clone-code">git clone https://github.com/axlseabr-tech/kahoot-local-pibid.git</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção: Perguntas Frequentes (FAQ) -->
+    <section class="section-area bg-surface" id="faq">
+      <div class="container">
+        <div class="title-center">
+          <span class="kicker">Tire Suas Dúvidas</span>
+          <h2 class="title-lg">Perguntas Frequentes dos Professores</h2>
+        </div>
+
+        <div class="faq-accordion">
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Os alunos gastam seus créditos de dados móveis (4G/5G)?</span>
+              <span class="faq-chevron">+</span>
+            </button>
+            <div class="faq-answer">
+              <p><strong>Não, absolutamente zero!</strong> Os alunos se conectam ao Wi-Fi local gerado pelo próprio computador do professor. Toda a comunicação ocorre dentro da sala de aula, sem consumir nenhum dado de operadora de celular.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Quantos alunos conseguem jogar ao mesmo tempo?</span>
+              <span class="faq-chevron">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>O sistema foi construído em Node.js com WebSockets ultraleves. Uma placa de rede sem fio padrão de notebook atende com folga entre <strong>40 e 50 celulares simultâneos</strong> com latência inferior a 10 milissegundos.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Posso usar para outras disciplinas além de Matemática?</span>
+              <span class="faq-chevron">+</span>
+            </button>
+            <div class="faq-answer">
+              <p><strong>Sim!</strong> O jogo possui um <strong>Editor Visual de Quizzes</strong> embutido. Você pode criar questionários de Física, História, Geografia, Biologia, Língua Portuguesa ou qualquer outro tema com alternativas personalizadas e tempos ajustáveis de 10 a 60 segundos.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>O Windows exibiu "Bloqueio Inteligente" ou SmartScreen. Como liberar?</span>
+              <span class="faq-chevron">+</span>
+            </button>
+            <div class="faq-answer">
+              <p><strong>É 100% seguro!</strong> O Windows SmartScreen exibe esse aviso preventivo padrão para qualquer script executável (.bat) baixado da internet que não possui uma assinatura digital comercial da Microsoft.</p>
+              <p style="margin-top: 8px;"><strong>Como desbloquear:</strong></p>
+              <p style="margin-top: 4px;">Clique com o <strong>botão direito</strong> do mouse no arquivo <code>iniciar_quiz.bat</code> (ou <code>instalar_dependencias.bat</code>) &rarr; selecione <strong>Propriedades</strong> &rarr; na aba <em>Geral</em>, marque a caixinha <strong>[✓] Desbloquear</strong> (Unblock) no rodapé e clique em <strong>OK</strong>. Pronto, o arquivo estará liberado permanentemente!</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>E se a escola não tiver projetor ou datashow?</span>
+              <span class="faq-chevron">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Você pode colocar o notebook em cima de uma mesa no centro da sala ou virado para a turma. O ideal é usar projetor ou TV HDMI, mas o jogo roda perfeitamente apenas com a tela do computador.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção: Comunicação, Contato & Feedback dos Professores (#comunidade) -->
+    <section class="section-area bg-surface" id="comunidade">
+      <div class="container">
+        <div class="title-center">
+          <span class="kicker">Comunidade PIBID & Professores</span>
+          <h2 class="title-lg">Canais de Contato & Feedback</h2>
+          <p class="desc-text">
+            Precisa de auxílio para instalar o jogo na sua escola, tem dúvidas técnicas ou quer compartilhar como foi a aplicação em sala de aula? Fale com o desenvolvedor!
           </p>
         </div>
 
         <div class="community-layout-grid">
           <!-- Coluna 1: Contato Direto -->
           <div class="contact-channels-box">
-            <h3>Canais Diretos de Contato</h3>
+            <h3>Fale com Axl Seabra</h3>
             <p class="contact-desc">
-              Tem dúvidas sobre os prompts, sugestões de novos temas ou deseja replicar a pesquisa na sua escola? Fale diretamente comigo:
+              Bolsista desenvolvedor do projeto PIBID Matemática • UFRR. Atendimento direto para professores e escolas:
             </p>
 
             <div class="contact-cards-stack">
@@ -971,57 +497,57 @@ Questão [Número] ([Tipo da Questão])
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                 </div>
                 <div class="contact-details-col">
-                  <span class="contact-label">E-mail Principal</span>
+                  <span class="contact-label">E-mail de Contato</span>
                   <span class="contact-val">axlseabra10@gmail.com</span>
                   <span class="contact-subtext">Clique para enviar mensagem</span>
                 </div>
               </a>
 
               <!-- WhatsApp -->
-              <a href="https://wa.me/5595991273913?text=Ol%C3%A1%20Axl,%20vim%20pelo%20seu%20site%20de%20divulga%C3%A7%C3%A3o%20cient%C3%ADfica!" target="_blank" rel="noopener" class="contact-pill-card">
+              <a href="https://wa.me/5595991273913?text=Ol%C3%A1%20Axl,%20vim%20pelo%20site%20do%20Kahoot%20Local%20PIBID!" target="_blank" rel="noopener" class="contact-pill-card">
                 <div class="contact-icon-circle icon-whatsapp">
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
                 </div>
                 <div class="contact-details-col">
                   <span class="contact-label">WhatsApp & Telefone</span>
                   <span class="contact-val">(95) 99127-3913</span>
-                  <span class="contact-subtext">Clique para conversar no WhatsApp</span>
+                  <span class="contact-subtext">Conversar no WhatsApp</span>
                 </div>
               </a>
             </div>
           </div>
 
-          <!-- Coluna 2: Mural de Comentários & Formulário -->
+          <!-- Coluna 2: Mural de Comentários & Depoimentos -->
           <div class="comments-panel-box">
-            <h3>Mural de Depoimentos & Avaliações</h3>
-            <p class="contact-subtext" style="margin-bottom: 16px;">O que você achou do portal e dos Prompts Mestres? Deixe seu feedback:</p>
+            <h3>Mural de Comentários do Kahoot</h3>
+            <p class="contact-subtext" style="margin-bottom: 14px;">Você já jogou com seus alunos ou testou o simulador? Deixe seu comentário:</p>
 
             <!-- Formulário de Comentário -->
-            <form id="comment-form" class="comment-form-container">
+            <form id="kahoot-comment-form" class="comment-form-container">
               <div class="comment-form-grid">
-                <input type="text" id="comment-name" class="input-field" placeholder="Seu Nome Completo" required>
-                <select id="comment-role" class="select-field" required>
-                  <option value="" disabled selected>Sua Função / Perfil</option>
-                  <option value="Professor(a)">Professor(a)</option>
-                  <option value="Estudante / Aluno(a)">Estudante / Aluno(a)</option>
-                  <option value="Pesquisador(a)">Pesquisador(a)</option>
-                  <option value="Bolsista PIBID / PIBIT">Bolsista PIBID / PIBIT</option>
+                <input type="text" id="k-comment-name" class="input-field" placeholder="Seu Nome" required>
+                <select id="k-comment-role" class="select-field" required>
+                  <option value="" disabled selected>Seu Papel</option>
+                  <option value="Professor(a) de Matemática">Professor(a) de Matemática</option>
+                  <option value="Professor(a) de Outra Disciplina">Professor(a) de Outra Disciplina</option>
+                  <option value="Bolsista PIBID / Licenciando">Bolsista PIBID / Licenciando</option>
+                  <option value="Aluno(a)">Aluno(a)</option>
                   <option value="Outro">Outro</option>
                 </select>
               </div>
 
               <div class="comment-form-grid" style="margin-bottom: 12px;">
-                <select id="comment-rating" class="select-field" required>
-                  <option value="5">⭐⭐⭐⭐⭐ Excelente (5 estrelas)</option>
+                <select id="k-comment-rating" class="select-field" required>
+                  <option value="5">⭐⭐⭐⭐⭐ Sensacional (5 estrelas)</option>
                   <option value="4">⭐⭐⭐⭐ Muito Bom (4 estrelas)</option>
                   <option value="3">⭐⭐⭐ Bom (3 estrelas)</option>
                   <option value="2">⭐⭐ Regular (2 estrelas)</option>
                   <option value="1">⭐ Precisa Melhorar (1 estrela)</option>
                 </select>
-                <input type="text" id="comment-institution" class="input-field" placeholder="Escola ou Instituição (opcional)">
+                <input type="text" id="k-comment-school" class="input-field" placeholder="Nome da Escola (opcional)">
               </div>
 
-              <textarea id="comment-message" class="textarea-field" placeholder="Escreva seu comentário, experiência com os prompts ou feedback pedagógico..." required></textarea>
+              <textarea id="k-comment-message" class="textarea-field" placeholder="Conte como foi a partida com a turma ou deixe sua dúvida técnica..." required></textarea>
 
               <button type="submit" class="btn btn-primary btn-sm" style="width: 100%;">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
@@ -1029,9 +555,9 @@ Questão [Número] ([Tipo da Questão])
               </button>
             </form>
 
-            <!-- Feed de Comentários -->
-            <div class="comments-feed" id="comments-feed">
-              <!-- Renderizado dinamicamente via JS -->
+            <!-- Feed de Comentários do Kahoot -->
+            <div class="comments-feed" id="kahoot-comments-feed">
+              <!-- Preenchido via JS -->
             </div>
           </div>
         </div>
@@ -1039,57 +565,50 @@ Questão [Número] ([Tipo da Questão])
     </section>
   </main>
 
-  <!-- Rodapé Oficial -->
-  <footer class="main-footer">
-    <div class="container footer-content">
-      <div class="footer-brand">
+  <!-- Rodapé -->
+  <footer class="footer-block">
+    <div class="container footer-grid">
+      <div class="footer-col-main">
         <div class="footer-logo">
-          <img src="assets/emblem.jpg" alt="Logo" class="footer-emblem">
-          <span>Portal de Divulgação Científica — Axl Seabra</span>
+          <span class="shape s-red">▲</span>
+          <span class="shape s-blue">◆</span>
+          <span>Kahoot Local PIBID</span>
         </div>
-        <p>Universidade Federal de Roraima (UFRR) • Centro de Ciências e Tecnologia (CCT)</p>
-        <p class="license-text">Material distribuído como Recurso Educacional Aberto (REA) para a melhoria do ensino público e privado de ciências exatas.</p>
+        <p>Projeto desenvolvido no âmbito do <strong>Programa Institucional de Bolsas de Iniciação à Docência (PIBID)</strong> • Universidade Federal de Roraima (UFRR).</p>
+        <p class="license-tag">Desenvolvido por <strong>Axl Oliveira Seabra</strong>. Distribuído sob Licença Aberta para professores de todo o Brasil.</p>
       </div>
 
-      <div class="footer-links-group">
-        <h4>Navegação Rápida</h4>
+      <div class="footer-col">
+        <h4>Navegação</h4>
         <ul>
           <li><a href="#inicio">Início</a></li>
-          <li><a href="#prompts">Catálogo de Prompts</a></li>
-          <li><a href="#metodologia">Os 8 Pilares do Prompt</a></li>
-          <li><a href="#documentos">Baixar PDF Oficial</a></li>
-          <li><a href="#projetos-interativos">Outros Projetos</a></li>
-          <li><a href="#comunidade">Contato & Comentários</a></li>
+          <li><a href="#simulador">Simulador Demo</a></li>
+          <li><a href="#passo-a-passo">Como Jogar</a></li>
+          <li><a href="#downloads">Baixar Arquivos</a></li>
+          <li><a href="#faq">Perguntas Frequentes</a></li>
         </ul>
       </div>
 
-      <div class="footer-links-group">
-        <h4>Recursos e Ferramentas</h4>
+      <div class="footer-col">
+        <h4>Ecossistema</h4>
         <ul>
-          <li><a href="https://gemini.google.com" target="_blank" rel="noopener">Google Gemini</a></li>
-          <li><a href="https://chatgpt.com" target="_blank" rel="noopener">ChatGPT</a></li>
-          <li><a href="https://claude.ai" target="_blank" rel="noopener">Anthropic Claude</a></li>
-          <li><a href="https://ufrr.br" target="_blank" rel="noopener">Portal UFRR</a></li>
+          <li><a href="https://axlseabr-tech.github.io/divulgacao-cientifica/Site/" target="_blank">Portal de Divulgação Científica &nearr;</a></li>
+          <li><a href="https://ufrr.br" target="_blank">Portal UFRR &nearr;</a></li>
+          <li><a href="https://github.com/axlseabr-tech" target="_blank">GitHub de Axl Seabra &nearr;</a></li>
         </ul>
       </div>
     </div>
 
-    <div class="footer-bottom">
+    <div class="footer-bottom-bar">
       <div class="container footer-bottom-flex">
-        <p>&copy; 2026 Axl Oliveira Seabra & Grupo de Pesquisa TIDIEM / UFRR. Todos os direitos de autoria intelectual reservados.</p>
-        <a href="#inicio" class="back-to-top-btn" aria-label="Voltar ao topo">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg>
-          Topo
-        </a>
+        <p>&copy; 2026 Axl Oliveira Seabra • PIBID Matemática UFRR.</p>
+        <a href="#inicio" class="back-top">Voltar ao topo &uarr;</a>
       </div>
     </div>
   </footer>
 
-  <!-- Toast Flutuante de Feedback ao Copiar -->
-  <div class="toast-notification" id="toast">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-    <span id="toast-message">Prompt copiado com sucesso para a área de transferência!</span>
-  </div>
+  <!-- Toast Notificação -->
+  <div class="toast" id="toast">Comando copiado com sucesso!</div>
 
   <script src="script.js"></script>
 </body>
