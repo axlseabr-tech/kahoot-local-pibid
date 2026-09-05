@@ -1,0 +1,50 @@
+{
+  "name": "EduQuiz Local - Quiz Gamificado Offline",
+  "short_name": "EduQuiz",
+  "description": "Plataforma de Quiz Interativo e Gamificado 100% Offline para Escolas e Salas de Aula - PIBID Matemática UFRR",
+  "start_url": "/host.html",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#22084b",
+  "theme_color": "#381273",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Tela do Host (Projetor)",
+      "short_name": "Host",
+      "description": "Iniciar e controlar partida de quiz no projetor",
+      "url": "/host.html",
+      "icons": [{ "src": "/icons/icon.svg", "sizes": "192x192" }]
+    },
+    {
+      "name": "Entrar como Aluno",
+      "short_name": "Jogador",
+      "description": "Responder quiz pelo celular ou computador",
+      "url": "/index.html",
+      "icons": [{ "src": "/icons/icon.svg", "sizes": "192x192" }]
+    },
+    {
+      "name": "Editor de Quizzes",
+      "short_name": "Editor",
+      "description": "Criar e editar questionários pedagógicos com imagens",
+      "url": "/editor.html",
+      "icons": [{ "src": "/icons/icon.svg", "sizes": "192x192" }]
+    }
+  ],
+  "categories": ["education", "games", "productivity"]
+}
