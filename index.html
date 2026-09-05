@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kahoot Local PIBID | Quiz Interativo 100% Offline para Escolas</title>
-  <meta name="description" content="Plataforma de Quiz estilo Kahoot 100% offline para escolas públicas. Sem internet, latência zero, ilimitado e gratuito. Projeto PIBID Matemática UFRR.">
+  <title>EduQuiz Local | Quiz Gamificado 100% Offline para Escolas</title>
+  <meta name="description" content="Plataforma de Quiz Interativo e Gamificado 100% offline para escolas públicas e professores. Sem internet, latência zero, ilimitado e gratuito. Projeto PIBID Matemática UFRR.">
   <meta name="author" content="Axl Oliveira Seabra">
-  <meta name="keywords" content="Kahoot, Quiz Offline, PIBID, UFRR, Matemática, Gamificação, Educação, Node.js, Socket.io">
+  <meta name="keywords" content="EduQuiz, Quiz Offline, PIBID, UFRR, Matemática, Gamificação, Educação, Node.js, Socket.io, PWA, Microsoft Edge">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Kahoot Local PIBID | A Emoção do Quiz Sem Precisar de Internet">
+  <meta property="og:title" content="EduQuiz Local | A Emoção do Quiz Gamificado Sem Precisar de Internet">
   <meta property="og:description" content="Transforme o notebook do professor em um servidor local via Wi-Fi Hotspot. Alunos jogam pelo celular com latência zero e sem gastar dados.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/kahoot_hero.jpg">
+  <meta property="og:image" content="assets/eduquiz_hero.jpg">
 
   <!-- Fontes Google: Outfit (Títulos) + Inter (Texto) + JetBrains Mono (Código) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,10 +20,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="assets/kahoot_icon.png">
-  <link rel="apple-touch-icon" href="assets/kahoot_icon.png">
+  <link rel="icon" type="image/svg+xml" href="assets/eduquiz_icon.svg">
+  <link rel="apple-touch-icon" href="assets/eduquiz_icon.svg">
 
-  <link rel="stylesheet" href="style.css?v=2.3">
+  <link rel="stylesheet" href="style.css?v=3.0">
 </head>
 <body>
   <!-- Efeitos de Brilho de Fundo Gamificados -->
@@ -44,9 +44,9 @@
   <header class="navbar" id="navbar">
     <div class="container nav-flex">
       <a href="#inicio" class="brand" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
-        <img src="assets/kahoot_icon.png" alt="Kahoot Neon Shapes" class="brand-emblem" style="width: 44px; height: 44px; border-radius: 10px; object-fit: cover; flex-shrink: 0; box-shadow: 0 0 16px rgba(106, 37, 217, 0.45); border: 1px solid rgba(255, 255, 255, 0.15);">
+        <img src="assets/eduquiz_icon.svg" alt="EduQuiz Logo" class="brand-emblem" style="width: 44px; height: 44px; border-radius: 10px; object-fit: cover; flex-shrink: 0; box-shadow: 0 0 16px rgba(106, 37, 217, 0.45); border: 1px solid rgba(255, 255, 255, 0.15);">
         <div class="brand-title">
-          <span class="main-name">Kahoot Local</span>
+          <span class="main-name">EduQuiz Local</span>
           <span class="sub-name">PIBID • UFRR</span>
         </div>
       </a>
@@ -93,14 +93,15 @@
             </a>
             <span class="pill pill-green">⚡ Latência Zero (&lt; 10ms)</span>
             <span class="pill pill-blue">📶 100% Offline</span>
+            <span class="pill pill-orange">🛡️ Compatível com Windows</span>
           </div>
 
           <h1 class="hero-heading">
-            A emoção do Kahoot na sala de aula, <span class="vivid-gradient">sem gastar 1 MB de internet!</span>
+            A emoção do quiz gamificado na sala de aula, <span class="vivid-gradient">sem gastar 1 MB de internet!</span>
           </h1>
 
           <p class="hero-lead">
-            Projetado para vencer o maior desafio das escolas públicas: a falta de conexão. O notebook do professor gera uma rede Wi-Fi local própria e os alunos jogam simultaneamente pelos seus celulares lendo um <strong>QR Code na lousa</strong>. Sem contas pagas, sem anúncios e com jogadores ilimitados.
+            Projetado para vencer o maior desafio das escolas públicas: a falta de conexão. O notebook do professor gera uma rede Wi-Fi local própria e os alunos jogam simultaneamente pelos seus celulares lendo um <strong>QR Code na lousa</strong>. Sem contas pagas, sem anúncios, sem riscos de bloqueio e com jogadores ilimitados.
           </p>
 
           <div class="hero-actions">
@@ -108,11 +109,11 @@
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
               Testar Simulador ao Vivo
             </a>
-            <a href="docs/kahoot-local-pibid.zip" class="btn btn-secondary" download>
+            <a href="docs/eduquiz-local.zip" class="btn btn-secondary" download>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-              Baixar Projeto (.ZIP)
+              Baixar EduQuiz (.ZIP)
             </a>
-            <a href="docs/Manual_Kahoot_Local_PIBID.pdf" class="btn btn-ghost" download>
+            <a href="docs/Manual_EduQuiz_Local_PIBID.pdf" class="btn btn-ghost" download>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
               Manual em PDF
             </a>
@@ -133,15 +134,15 @@
               <span class="m-lbl">Livre & Sem Anúncios</span>
             </div>
             <div class="metric-box">
-              <span class="m-val">1 Clique</span>
-              <span class="m-lbl">Para Iniciar no Windows</span>
+              <span class="m-val">Microsoft PWA</span>
+              <span class="m-lbl">Instalação Direta no Windows</span>
             </div>
           </div>
         </div>
 
         <div class="hero-media-col">
           <div class="media-frame">
-            <img src="assets/kahoot_hero.jpg" alt="Alunos jogando Kahoot Local em sala de aula" class="hero-cover">
+            <img src="assets/eduquiz_hero.jpg" alt="Alunos jogando EduQuiz Local em sala de aula" class="hero-cover">
             <div class="media-overlay-badge">
               <div class="pulse-indicator"></div>
               <span>Servidor Local Ativo • Latência: 4ms</span>
@@ -151,21 +152,21 @@
       </div>
     </section>
 
-    <!-- Seção: Por que o Kahoot Local? -->
+    <!-- Seção: Por que o EduQuiz Local? -->
     <section class="section-area" id="por-que">
       <div class="container">
         <div class="title-center">
           <span class="kicker">A Realidade da Escola Pública</span>
           <h2 class="title-lg">Por que Criamos uma Versão 100% Offline?</h2>
           <p class="desc-text">
-            O Kahoot original é uma excelente ferramenta pedagógica, mas na prática cotidiana da maioria das escolas públicas do Brasil ele se torna inviável.
+            Plataformas comerciais de quiz online dependem de conexões estáveis com servidores na nuvem, o que na prática cotidiana da maioria das escolas públicas do Brasil se torna inviável.
           </p>
         </div>
 
         <div class="comparison-grid">
-          <!-- Coluna 1: Kahoot Comercial -->
+          <!-- Coluna 1: Plataformas Comerciais -->
           <div class="comp-card card-commercial">
-            <div class="comp-badge bad">✕ Kahoot! Comercial (Nuvem)</div>
+            <div class="comp-badge bad">✕ Plataformas Comerciais (Nuvem)</div>
             <h3>As Barreiras na Escola Pública</h3>
             <ul class="comp-list list-bad">
               <li><strong>Dependência Crítica de Internet:</strong> Qualquer oscilação na rede derruba a partida e desmotiva a turma inteira.</li>
@@ -175,16 +176,16 @@
             </ul>
           </div>
 
-          <!-- Coluna 2: Kahoot Local PIBID -->
+          <!-- Coluna 2: EduQuiz Local PIBID -->
           <div class="comp-card card-local">
-            <div class="comp-badge good">✓ Kahoot Local PIBID (Offline)</div>
+            <div class="comp-badge good">✓ EduQuiz Local (PIBID UFRR)</div>
             <h3>A Liberdade da Rede Local</h3>
             <ul class="comp-list list-good">
-              <li><strong>100% Desconectado da Internet:</strong> Funciona mesmo se a escola inteira estiver sem sinal de internet ou luz de rede externa.</li>
+              <li><strong>100% Desconectado da Internet:</strong> Funciona mesmo se a escola inteira estiver sem sinal de internet ou com sinal instável.</li>
               <li><strong>Jogadores Ilimitados & Sem Planos:</strong> Conecte 40, 50 ou mais alunos simultaneamente na rede local do notebook.</li>
-              <li><strong>Conexão Instantânea via QR Code:</strong> O aluno apenas aponta a câmera para a lousa e já está no jogo em 3 segundos.</li>
-              <li><strong>Sons Nativos Sintetizados:</strong> Áudio interativo criado em código puro (Web Audio API) sem baixar nenhum arquivo externo.</li>
-              <li><strong>Editor de Quizzes Integrado:</strong> Crie seus próprios questionários para qualquer matéria pelo próprio navegador.</li>
+              <li><strong>Conexão Instantânea via QR Code:</strong> O aluno apenas aponta a câmera para a lousa e já entra no jogo em 3 segundos.</li>
+              <li><strong>Suporte a Imagens & Gráficos:</strong> Upload de figuras geométricas, diagramas e fórmulas com atalho rápido Ctrl+V.</li>
+              <li><strong>Aplicativo Microsoft Edge (PWA):</strong> Instalação limpa no Windows sem alertas do Smart App Control.</li>
             </ul>
           </div>
         </div>
@@ -215,7 +216,7 @@
               <div class="demo-formula">Fórmula: Área = π · r²</div>
             </div>
 
-            <!-- Botões das 4 Respostas estilo Kahoot -->
+            <!-- Botões das 4 Respostas Gamificadas -->
             <div class="demo-answers-grid" id="demo-options">
               <button class="answer-btn ans-red" data-correct="false" data-letter="A">
                 <span class="btn-shape">▲</span>
@@ -248,7 +249,7 @@
           </div>
 
           <div class="demo-instructions-note">
-            <p>💡 <em>No jogo real em sala de aula, as perguntas e alternativas são projetadas na lousa pelo notebook, e a tela do smartphone do aluno exibe os 4 botões coloridos de resposta rápida com pontuação por velocidade!</em></p>
+            <p>💡 <em>No jogo real em sala de aula, as perguntas, ilustrações e alternativas são projetadas na lousa pelo computador do professor, e a tela do smartphone do aluno exibe os 4 botões de resposta rápida com pontuação por velocidade!</em></p>
           </div>
         </div>
       </div>
@@ -270,7 +271,7 @@
             <div class="diagram-node node-server">
               <div class="node-icon">💻</div>
               <h4>Notebook do Professor</h4>
-              <span class="badge-role">Servidor Local (Node.js)</span>
+              <span class="badge-role">Servidor Local (EduQuiz)</span>
               <p>Ativa o <strong>Ponto de Acesso Móvel do Windows</strong> (Hotspot Wi-Fi). Processa as respostas e projeta o placar na lousa.</p>
             </div>
 
@@ -299,41 +300,38 @@
           <span class="kicker">Facilidade de Uso</span>
           <h2 class="title-lg">Como Jogar em Sala: Guia em 4 Passos</h2>
           <p class="desc-text">
-            Criado pensando em professores que não têm tempo para configurações complexas. Tudo funciona com arquivos de 1 clique.
+            Criado pensando em professores que buscam praticidade. O aplicativo roda diretamente no Microsoft Edge ou como app no Windows.
           </p>
         </div>
 
         <div class="steps-flow-grid">
           <div class="flow-card">
             <div class="step-num">1</div>
-            <h4>Instalação Inicial (1 Vez)</h4>
-            <p>Baixe a pasta do jogo e dê dois cliques no arquivo:</p>
+            <h4>Instalação Inicial</h4>
+            <p>Baixe o pacote e instale as dependências com 1 clique:</p>
             <code>instalar_dependencias.bat</code>
-            <p class="step-sub">Ele baixa as bibliotecas necessárias de forma 100% automática.</p>
+            <p class="step-sub">Prepara as bibliotecas locais automaticamente sem complicação.</p>
           </div>
 
           <div class="flow-card">
             <div class="step-num">2</div>
             <h4>Ligue o Ponto de Acesso</h4>
             <p>No Windows, pressione <strong>Win + I</strong> &rarr; <em>Rede e Internet</em> &rarr; <strong>Ponto de Acesso Móvel</strong> e clique em <em>Ativado</em>.</p>
-            <p class="step-sub">Dica: Crie uma rede chamada <code>Quiz-Matematica</code> com senha fácil (ex: <code>12345678</code>).</p>
+            <p class="step-sub">Dica: Crie uma rede chamada <code>EduQuiz-Sala</code> com senha simples (ex: <code>12345678</code>).</p>
           </div>
 
           <div class="flow-card">
             <div class="step-num">3</div>
-            <h4>Inicie a Partida</h4>
-            <p>Dê dois cliques no arquivo:</p>
-            <code>iniciar_quiz.bat</code>
-            <p class="step-sub">O servidor liga e o navegador abre na hora com o <strong>QR Code</strong> gigante para projetar!</p>
-            <div style="margin-top: 10px; padding: 8px 10px; background: rgba(255, 166, 2, 0.1); border-left: 3px solid #ffa602; border-radius: 4px; font-size: 0.76rem; color: var(--text-muted);">
-              <strong>⚠️ Aviso do Windows:</strong> Se o sistema bloquear a execução, clique com o botão direito no arquivo &rarr; <em>Propriedades</em> &rarr; marque a caixa <strong>[✓] Desbloquear</strong> e clique em <em>OK</em>.
-            </div>
+            <h4>Abra o Aplicativo</h4>
+            <p>Inicie o EduQuiz com o inicializador seguro:</p>
+            <code>iniciar_eduquiz.bat</code>
+            <p class="step-sub">O sistema abre no modo aplicativo nativo no Microsoft Edge com o QR Code na tela!</p>
           </div>
 
           <div class="flow-card">
             <div class="step-num">4</div>
             <h4>Alunos no Jogo & Pódio</h4>
-            <p>Os estudantes apontam o celular para o QR Code, digitam seus nomes e a partida começa com ranking ao vivo e confetes!</p>
+            <p>Os estudantes apontam o celular para o QR Code, digitam seus nomes e a partida começa com ranking em tempo real e confetes!</p>
           </div>
         </div>
       </div>
@@ -355,19 +353,19 @@
           <div class="down-card highlight-down">
             <div class="down-icon-box">📦</div>
             <div class="down-body">
-              <span class="pill pill-green">Pacote Pronto para Windows</span>
-              <h3>kahoot-local-pibid.zip</h3>
-              <p>Contém o servidor Node.js, scripts executáveis (.bat), quizzes de demonstração de Matemática e o editor integrado.</p>
+              <span class="pill pill-green">Pacote Oficial para Windows</span>
+              <h3>eduquiz-local.zip</h3>
+              <p>Contém o servidor Node.js, suporte a PWA no Microsoft Edge, quizzes de demonstração de Matemática com imagens e o editor visual de questões.</p>
               <div class="down-meta">
                 <span>📁 Formato: .ZIP</span>
-                <span>⚖️ Tamanho: ~175 KB</span>
+                <span>⚖️ Tamanho: ~180 KB</span>
                 <span>⚙️ Requisitos: Windows 10/11</span>
               </div>
             </div>
             <div class="down-action">
-              <a href="docs/kahoot-local-pibid.zip" class="btn btn-primary btn-lg" download="kahoot-local-pibid.zip">
+              <a href="docs/eduquiz-local.zip" class="btn btn-primary btn-lg" download="eduquiz-local.zip">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-                Baixar Projeto (.ZIP)
+                Baixar EduQuiz (.ZIP)
               </a>
             </div>
           </div>
@@ -377,7 +375,7 @@
             <div class="down-icon-box">📄</div>
             <div class="down-body">
               <span class="pill pill-blue">Manual Oficial em PDF</span>
-              <h3>Manual_Kahoot_Local_PIBID.pdf</h3>
+              <h3>Manual_EduQuiz_Local_PIBID.pdf</h3>
               <p>Guia impresso passo a passo com ilustrações para distribuição entre professores e bolsistas do PIBID.</p>
               <div class="down-meta">
                 <span>📁 Formato: PDF</span>
@@ -386,7 +384,7 @@
               </div>
             </div>
             <div class="down-action">
-              <a href="docs/Manual_Kahoot_Local_PIBID.pdf" class="btn btn-secondary btn-lg" download="Manual_Kahoot_Local_PIBID.pdf">
+              <a href="docs/Manual_EduQuiz_Local_PIBID.pdf" class="btn btn-secondary btn-lg" download="Manual_EduQuiz_Local_PIBID.pdf">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
                 Baixar Manual (PDF)
               </a>
@@ -400,7 +398,7 @@
             <h4>Você também pode clonar o projeto via terminal:</h4>
             <button class="btn-copy-code" id="btn-copy-git">Copiar Comando</button>
           </div>
-          <pre><code id="git-clone-code">git clone https://github.com/axlseabr-tech/kahoot-local-pibid.git</code></pre>
+          <pre><code id="git-clone-code">git clone https://github.com/axlseabr-tech/eduquiz-local.git</code></pre>
         </div>
       </div>
     </section>
@@ -414,6 +412,16 @@
         </div>
 
         <div class="faq-accordion">
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Como instalar o aplicativo no Windows sem alertas do Smart App Control?</span>
+              <span class="faq-chevron">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>O <strong>EduQuiz Local</strong> foi projetado seguindo os padrões oficiais da Microsoft para <strong>Progressive Web Apps (PWA)</strong>. Basta abrir a tela do Host no <strong>Microsoft Edge</strong> e clicar no botão <em>"Instalar Aplicativo no Windows"</em>. Ele cria automaticamente um ícone seguro no Menu Iniciar e na Área de Trabalho que roda em janela dedicada sem acionar nenhum bloqueio do Smart App Control.</p>
+            </div>
+          </div>
+
           <div class="faq-item">
             <button class="faq-question">
               <span>Os alunos gastam seus créditos de dados móveis (4G/5G)?</span>
@@ -436,23 +444,11 @@
 
           <div class="faq-item">
             <button class="faq-question">
-              <span>Posso usar para outras disciplinas além de Matemática?</span>
+              <span>Posso adicionar imagens, figuras geométricas e gráficos nas perguntas?</span>
               <span class="faq-chevron">+</span>
             </button>
             <div class="faq-answer">
-              <p><strong>Sim!</strong> O jogo possui um <strong>Editor Visual de Quizzes</strong> embutido. Você pode criar questionários de Física, História, Geografia, Biologia, Língua Portuguesa ou qualquer outro tema com alternativas personalizadas e tempos ajustáveis de 10 a 60 segundos.</p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-question">
-              <span>O Windows exibiu "Bloqueio Inteligente" ou SmartScreen. Como liberar?</span>
-              <span class="faq-chevron">+</span>
-            </button>
-            <div class="faq-answer">
-              <p><strong>É 100% seguro!</strong> O Windows SmartScreen exibe esse aviso preventivo padrão para qualquer script executável (.bat) baixado da internet que não possui uma assinatura digital comercial da Microsoft.</p>
-              <p style="margin-top: 8px;"><strong>Como desbloquear:</strong></p>
-              <p style="margin-top: 4px;">Clique com o <strong>botão direito</strong> do mouse no arquivo <code>iniciar_quiz.bat</code> (ou <code>instalar_dependencias.bat</code>) &rarr; selecione <strong>Propriedades</strong> &rarr; na aba <em>Geral</em>, marque a caixinha <strong>[✓] Desbloquear</strong> (Unblock) no rodapé e clique em <strong>OK</strong>. Pronto, o arquivo estará liberado permanentemente!</p>
+              <p><strong>Sim!</strong> O EduQuiz Local possui suporte nativo a imagens. Você pode selecionar arquivos do computador, arrastar e soltar (Drag & Drop) ou até mesmo pressionar <strong>Ctrl + V</strong> para colar capturas de tela e recortes de livros diretamente no Criador de Quizzes.</p>
             </div>
           </div>
 
@@ -502,7 +498,7 @@
               </a>
 
               <!-- WhatsApp -->
-              <a href="https://wa.me/5595991273913?text=Ol%C3%A1%20Axl,%20vim%20pelo%20site%20do%20Kahoot%20Local%20PIBID!" target="_blank" rel="noopener" class="contact-pill-card">
+              <a href="https://wa.me/5595991273913?text=Ol%C3%A1%20Axl,%20vim%20pelo%20portal%20do%20EduQuiz%20Local%20PIBID!" target="_blank" rel="noopener" class="contact-pill-card">
                 <div class="contact-icon-circle icon-whatsapp">
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
                 </div>
@@ -517,11 +513,11 @@
 
           <!-- Coluna 2: Mural de Comentários & Depoimentos -->
           <div class="comments-panel-box">
-            <h3>Mural de Comentários do Kahoot</h3>
+            <h3>Mural da Comunidade EduQuiz</h3>
             <p class="contact-subtext" style="margin-bottom: 14px;">Você já jogou com seus alunos ou testou o simulador? Deixe seu comentário:</p>
 
             <!-- Formulário de Comentário -->
-            <form id="kahoot-comment-form" class="comment-form-container">
+            <form id="eduquiz-comment-form" class="comment-form-container">
               <div class="comment-form-grid">
                 <input type="text" id="k-comment-name" class="input-field" placeholder="Seu Nome" required>
                 <select id="k-comment-role" class="select-field" required>
@@ -553,8 +549,8 @@
               </button>
             </form>
 
-            <!-- Feed de Comentários do Kahoot -->
-            <div class="comments-feed" id="kahoot-comments-feed">
+            <!-- Feed de Comentários do EduQuiz -->
+            <div class="comments-feed" id="eduquiz-comments-feed">
               <!-- Preenchido via JS -->
             </div>
           </div>
@@ -568,8 +564,8 @@
     <div class="container footer-grid">
       <div class="footer-col-main">
         <div class="footer-logo" style="display: flex; align-items: center; gap: 12px;">
-          <img src="assets/kahoot_icon.png" alt="Kahoot Neon Shapes" style="width: 36px; height: 36px; border-radius: 8px; object-fit: cover; border: 1px solid rgba(255, 255, 255, 0.1);">
-          <span>Kahoot Local PIBID</span>
+          <img src="assets/eduquiz_icon.svg" alt="EduQuiz Logo" style="width: 36px; height: 36px; border-radius: 8px; object-fit: cover; border: 1px solid rgba(255, 255, 255, 0.1);">
+          <span>EduQuiz Local PIBID</span>
         </div>
         <p>Projeto desenvolvido no âmbito do <strong>Programa Institucional de Bolsas de Iniciação à Docência (PIBID)</strong> • Universidade Federal de Roraima (UFRR).</p>
         <p class="license-tag">Desenvolvido por <strong>Axl Oliveira Seabra</strong>. Distribuído sob Licença Aberta para professores de todo o Brasil.</p>
@@ -607,6 +603,6 @@
   <!-- Toast Notificação -->
   <div class="toast" id="toast">Comando copiado com sucesso!</div>
 
-  <script src="script.js?v=2.3"></script>
+  <script src="script.js?v=3.0"></script>
 </body>
 </html>

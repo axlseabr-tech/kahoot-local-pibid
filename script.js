@@ -1,5 +1,5 @@
 /**
- * KAHOOT LOCAL PIBID - SCRIPT INTERATIVO
+ * EDUQUIZ LOCAL - SCRIPT INTERATIVO (PIBID MATEMÁTICA UFRR)
  * Funcionalidades: Simulador Demo jogável com Web Audio API, Temporizador,
  * Efeitos de Confetes, FAQ Accordion, Dark/Light Mode e Toast.
  */
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initFaqAccordion();
   initGitCopy();
   initMobileMenu();
-  initKahootComments();
+  initEduQuizComments();
 });
 
 /* ==========================================================================
@@ -20,7 +20,7 @@ function initTheme() {
   const toggleBtn = document.getElementById('theme-toggle');
   const root = document.documentElement;
 
-  const savedTheme = localStorage.getItem('kahoot-theme') || 'dark';
+  const savedTheme = localStorage.getItem('eduquiz-theme') || 'dark';
   root.setAttribute('data-theme', savedTheme);
 
   if (toggleBtn) {
@@ -28,7 +28,7 @@ function initTheme() {
       const current = root.getAttribute('data-theme');
       const next = current === 'dark' ? 'light' : 'dark';
       root.setAttribute('data-theme', next);
-      localStorage.setItem('kahoot-theme', next);
+      localStorage.setItem('eduquiz-theme', next);
     });
   }
 }
@@ -170,7 +170,7 @@ function initQuizSimulator() {
 
       if (isCorrect) {
         playCorrectSound();
-        // Cálculo de pontuação estilo Kahoot (baseada em velocidade)
+        // Cálculo de pontuação pedagógica gamificada (baseada na velocidade)
         const score = Math.round(500 + (timeLeft / 20) * 500);
 
         feedbackBody.innerHTML = `
@@ -312,14 +312,14 @@ function showToast(msg) {
 }
 
 /* ==========================================================================
-   6. MURAL DE COMENTÁRIOS DO KAHOOT (COM REAÇÕES, RESPOSTAS E LIDO)
+   6. MURAL DE COMENTÁRIOS DO EDUQUIZ (COM REAÇÕES, RESPOSTAS E LIDO)
    ========================================================================== */
-function initKahootComments() {
-  const form = document.getElementById('kahoot-comment-form');
-  const feed = document.getElementById('kahoot-comments-feed');
+function initEduQuizComments() {
+  const form = document.getElementById('eduquiz-comment-form');
+  const feed = document.getElementById('eduquiz-comments-feed');
   if (!feed) return;
 
-  const STORAGE_KEY = 'kahoot_local_comments_v3';
+  const STORAGE_KEY = 'eduquiz_local_comments_v1';
 
   const REACTIONS = [
     { emoji: '👍', label: 'Gostei' },

@@ -1,10 +1,11 @@
 /* ==========================================================================
-   KAHOOT LOCAL PIBID - SHOWCASE & PORTAL EDUCACIONAL
-   Design System: Paleta Gamificada Vibrante, Efeitos 3D de Botão, Dark/Light Mode
+   EDUQUIZ LOCAL PIBID - SHOWCASE & PORTAL EDUCACIONAL
+   Design Gamificado, Vidro Neon 3D, Alta Performance e Acessibilidade
+   Autor: Axl Oliveira Seabra (PIBID Matemática • UFRR)
    ========================================================================== */
 
 :root {
-  /* Cores Gamificadas Icônicas do Kahoot */
+  /* Cores Gamificadas Icônicas do EduQuiz */
   --k-red: #e21b3c;
   --k-red-dark: #b8142e;
   --k-blue: #1368ce;
@@ -503,7 +504,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 /* ==========================================================================
-   COMPARATIVO (POR QUE O KAHOOT LOCAL?)
+   COMPARATIVO (POR QUE O EDUQUIZ LOCAL?)
    ========================================================================== */
 
 .comparison-grid {
@@ -645,7 +646,7 @@ img { max-width: 100%; height: auto; display: block; }
   gap: 16px;
 }
 
-/* Botões 3D estilo Kahoot com sensação física de clique */
+/* Botões 3D estilo EduQuiz com sensação física de clique */
 .answer-btn {
   display: flex;
   align-items: center;
@@ -1261,7 +1262,7 @@ img { max-width: 100%; height: auto; display: block; }
   margin-bottom: 12px;
 }
 
-/* ── FEED DE COMENTÁRIOS DO KAHOOT (CAIXAS SEPARADAS) ── */
+/* ── FEED DE COMENTÁRIOS DO EDUQUIZ (CAIXAS SEPARADAS) ── */
 .comments-feed {
   display: flex;
   flex-direction: column;
